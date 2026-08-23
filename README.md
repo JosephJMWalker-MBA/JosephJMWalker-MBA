@@ -16,9 +16,21 @@ My work spans AI-assisted inquiry, public-record intelligence, governed review, 
 | --- | --- | --- |
 | [**Hermeneia**](https://github.com/JosephJMWalker-MBA/Hermeneia) | How can understanding evolve without losing provenance or human authority? | `VALIDATION` |
 | [**Proofline**](https://github.com/JosephJMWalker-MBA/Proofline) | How can public records become reproducible investigative evidence without automating accusation? | `FIELD VALIDATION` |
-| [**ChessHeat**](https://github.com/JosephJMWalker-MBA/ChessHeat) | Which spatial claims about chess consequence can actually be earned by measurement? | `ACTIVE RESEARCH` |
+| [**ChessHeat**](https://github.com/JosephJMWalker-MBA/ChessHeat) | Which spatial claims about chess consequence can actually be earned by measurement? | `PREREGISTRATION` |
 | [**Label Lens TTB**](https://github.com/JosephJMWalker-MBA/label-lens-ttb) | How can regulatory review be assisted without pretending software has regulatory authority? | `DEPLOYED PROTOTYPE` |
 | [**Pyxis**](https://github.com/JosephJMWalker-MBA/pyxis) | Can research and software transformations remain inspectable from intent through evidence? | `ACTIVE DEVELOPMENT` |
+
+---
+
+## Lab telemetry
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/lab-activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/lab-activity-light.svg">
+  <img alt="Twelve-week public lab activity and attention allocation" src="./assets/lab-activity-light.svg" width="100%">
+</picture>
+
+<sub>GitHub-backed public-repository telemetry. Activity is not treated as evidence of quality or importance. → [Open operator dashboard](./DASHBOARD.md)</sub>
 
 ---
 
