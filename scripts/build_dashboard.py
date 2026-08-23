@@ -11,8 +11,9 @@ import json
 import os
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 OWNER = "JosephJMWalker-MBA"
@@ -31,7 +32,7 @@ ASSETS = ROOT / "assets"
 DATA = ROOT / "data"
 
 
-def api_get(path: str, *, accept_202: bool = False):
+def api_get(path: str):
     token = os.getenv("GITHUB_TOKEN", "").strip()
     headers = {
         "Accept": "application/vnd.github+json",
@@ -43,29 +44,35 @@ def api_get(path: str, *, accept_202: bool = False):
 
     url = f"{API}{path}"
     last_error: Exception | None = None
-    for attempt in range(6):
+    for attempt in range(5):
         req = urllib.request.Request(url, headers=headers)
         try:
             with urllib.request.urlopen(req, timeout=30) as response:
-                status = response.status
                 body = response.read().decode("utf-8")
-                if status == 202 and not accept_202:
-                    time.sleep(2 + attempt * 2)
-                    continue
                 return json.loads(body) if body else None
-        except urllib.error.HTTPError as exc:
-            last_error = exc
-            if exc.code == 202:
-                time.sleep(2 + attempt * 2)
-                continue
-            raise
-        except Exception as exc:  # network/transient errors get bounded retries
+        except Exception as exc:  # bounded retries for transient API/network failures
             last_error = exc
             time.sleep(1 + attempt)
-    raise RuntimeError(f"GitHub API did not become ready for {path}: {last_error}")
+    raise RuntimeError(f"GitHub API request failed for {path}: {last_error}")
 
 
-def collect_repo(repo: str) -> dict:
+def week_window(now: datetime) -> tuple[datetime, list[datetime]]:
+    current = now.replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(days=now.weekday())
+    oldest = current - timedelta(weeks=WEEKS - 1)
+    starts = [oldest + timedelta(weeks=i) for i in range(WEEKS)]
+    return oldest, starts
+
+
+def parse_github_time(value: str | None) -> datetime | None:
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def collect_repo(repo: str, oldest: datetime) -> dict:
     record = {
         "repo": repo,
         "available": False,
@@ -74,22 +81,38 @@ def collect_repo(repo: str) -> dict:
         "latest_commit": None,
     }
 
-    try:
-        activity = api_get(f"/repos/{OWNER}/{repo}/stats/commit_activity")
-        if isinstance(activity, list) and activity:
-            tail = activity[-WEEKS:]
-            weekly = [int(item.get("total", 0)) for item in tail]
-            if len(weekly) < WEEKS:
-                weekly = ([0] * (WEEKS - len(weekly))) + weekly
-            record["weekly"] = weekly
-            record["total"] = sum(weekly)
-            record["available"] = True
+    since = urllib.parse.quote(oldest.isoformat().replace("+00:00", "Z"), safe="")
 
-        commits = api_get(f"/repos/{OWNER}/{repo}/commits?per_page=1")
-        if isinstance(commits, list) and commits:
-            commit = commits[0].get("commit", {})
-            stamp = (commit.get("committer") or {}).get("date") or (commit.get("author") or {}).get("date")
-            record["latest_commit"] = stamp
+    try:
+        page = 1
+        while page <= 50:  # safety bound; far above the expected profile volume
+            commits = api_get(f"/repos/{OWNER}/{repo}/commits?since={since}&per_page=100&page={page}")
+            if not isinstance(commits, list):
+                raise RuntimeError("Unexpected commits response")
+            if not commits:
+                break
+
+            for item in commits:
+                commit = item.get("commit", {})
+                stamp = (commit.get("committer") or {}).get("date") or (commit.get("author") or {}).get("date")
+                moment = parse_github_time(stamp)
+                if moment is None:
+                    continue
+
+                if record["latest_commit"] is None:
+                    record["latest_commit"] = stamp
+
+                delta_days = (moment.date() - oldest.date()).days
+                bucket = delta_days // 7
+                if 0 <= bucket < WEEKS:
+                    record["weekly"][bucket] += 1
+
+            if len(commits) < 100:
+                break
+            page += 1
+
+        record["total"] = sum(record["weekly"])
+        record["available"] = True
     except Exception as exc:
         record["error"] = str(exc)
 
@@ -114,6 +137,7 @@ def render_svg(snapshot: dict, *, dark: bool) -> str:
 
     repos = snapshot["repos"]
     weekly = snapshot["weekly_total"]
+    labels = snapshot["week_labels"]
     total = sum(weekly)
     active = sum(1 for r in repos if r["total"] > 0)
     max_week = max(max(weekly), 1)
@@ -127,7 +151,7 @@ def render_svg(snapshot: dict, *, dark: bool) -> str:
     pieces = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
         '<title id="title">Public lab activity over twelve weeks</title>',
-        '<desc id="desc">Weekly commit activity and repository attention allocation across six selected public research repositories. Commit volume measures activity, not quality or importance.</desc>',
+        '<desc id="desc">Weekly commit activity and repository attention allocation across six selected public research repositories. The current week is partial. Commit volume measures activity, not quality or importance.</desc>',
         f'<rect width="{width}" height="{height}" rx="18" fill="{bg}"/>',
         f'<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="17" fill="none" stroke="{rule}"/>',
         f'<text x="54" y="60" fill="{text}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" letter-spacing="2">PUBLIC LAB TELEMETRY · 12 WEEKS</text>',
@@ -136,7 +160,6 @@ def render_svg(snapshot: dict, *, dark: bool) -> str:
         f'<text x="1066" y="60" text-anchor="end" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">UPDATED {esc(snapshot["generated_at"][:10])}</text>',
     ]
 
-    # Weekly activity grid.
     for i in range(4):
         y = chart_y + (chart_h / 3) * i
         pieces.append(f'<line x1="{chart_x}" y1="{y:.1f}" x2="{chart_x + chart_w}" y2="{y:.1f}" stroke="{rule}" stroke-width="1"/>')
@@ -147,8 +170,10 @@ def render_svg(snapshot: dict, *, dark: bool) -> str:
         h = 0 if count == 0 else max(3, (count / max_week) * (chart_h - 26))
         x = chart_x + i * (bar_w + gap)
         y = chart_y + chart_h - h
-        pieces.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_w:.1f}" height="{h:.1f}" rx="3" fill="{accent}"/>')
-        pieces.append(f'<text x="{x + bar_w/2:.1f}" y="{chart_y + chart_h + 24}" text-anchor="middle" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W{i+1:02d}</text>')
+        opacity = "0.65" if i == WEEKS - 1 else "1"
+        pieces.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_w:.1f}" height="{h:.1f}" rx="3" fill="{accent}" opacity="{opacity}"/>')
+        suffix = "*" if i == WEEKS - 1 else ""
+        pieces.append(f'<text x="{x + bar_w/2:.1f}" y="{chart_y + chart_h + 24}" text-anchor="middle" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">{esc(labels[i])}{suffix}</text>')
 
     pieces.extend([
         f'<text x="{chart_x}" y="{chart_y - 18}" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">WEEKLY COMMITS</text>',
@@ -179,7 +204,7 @@ def render_svg(snapshot: dict, *, dark: bool) -> str:
         pieces.append(f'<text x="{x}" y="{metric_y}" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="1">{label}</text>')
         pieces.append(f'<text x="{x}" y="{metric_y + 30}" fill="{text}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22" font-weight="650">{esc(value)}</text>')
 
-    pieces.append(f'<text x="1066" y="522" text-anchor="end" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">PUBLIC REPOSITORIES ONLY</text>')
+    pieces.append(f'<text x="1066" y="522" text-anchor="end" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">* CURRENT WEEK PARTIAL · PUBLIC REPOSITORIES ONLY</text>')
     pieces.append('</svg>')
     return "\n".join(pieces) + "\n"
 
@@ -188,13 +213,18 @@ def main() -> None:
     ASSETS.mkdir(parents=True, exist_ok=True)
     DATA.mkdir(parents=True, exist_ok=True)
 
-    repos = [collect_repo(repo) for repo in REPOS]
+    now = datetime.now(timezone.utc)
+    oldest, starts = week_window(now)
+    repos = [collect_repo(repo, oldest) for repo in REPOS]
     weekly_total = [sum(repo["weekly"][i] for repo in repos) for i in range(WEEKS)]
     snapshot = {
-        "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+        "generated_at": now.replace(microsecond=0).isoformat(),
         "scope": "selected public repositories only",
         "interpretation": "commit volume measures activity, not quality, importance, or validation strength",
         "weeks": WEEKS,
+        "current_week_partial": True,
+        "week_starts": [start.date().isoformat() for start in starts],
+        "week_labels": [f"{start.month}/{start.day}" for start in starts],
         "weekly_total": weekly_total,
         "repos": repos,
     }
