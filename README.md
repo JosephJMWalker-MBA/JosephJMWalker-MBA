@@ -34,6 +34,21 @@ My work spans AI-assisted inquiry, public-record intelligence, governed review, 
 
 ---
 
+## Languages in the lab
+
+The implementation layer changes with the problem. These are the primary languages I reach for across the lab:
+
+| Language | Typical role |
+| --- | --- |
+| **`Python`** | Research systems, data and ML work, automation, experimental tooling |
+| **`TypeScript`** | Production web systems, governed workflows, interfaces and application logic |
+| **`Dart`** | Cross-platform application development |
+| **`Swift`** | Native Apple-platform prototypes and interfaces |
+
+<sub>Frameworks and platforms stay secondary to the language and the research problem; they are documented in the repositories where they matter.</sub>
+
+---
+
 ## Research programs
 
 **Understanding & interpretation**  
