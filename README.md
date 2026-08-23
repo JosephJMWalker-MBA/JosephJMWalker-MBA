@@ -6,7 +6,7 @@
 
 > I build research systems that preserve the difference between **evidence, inference, and authority**.
 
-My work spans AI-assisted inquiry, public-record intelligence, governed review, scientific measurement, and research tooling. The projects differ by domain; the recurring problem is the same: **how do we make useful systems without allowing convenience, automation, or compelling narratives to outrank the evidence?**
+I work **full-stack**, from persistence, server-side policy, authentication, deterministic evaluation, and research runtimes through interfaces, deployment, and operator tooling. My work spans AI-assisted inquiry, public-record intelligence, governed review, scientific measurement, and research tooling. The projects differ by domain; the recurring problem is the same: **how do we make useful systems without allowing convenience, automation, or compelling narratives to outrank the evidence?**
 
 ---
 
@@ -46,6 +46,22 @@ The implementation layer changes with the problem. These are the primary languag
 | **`Swift`** | Native Apple-platform prototypes and interfaces |
 
 <sub>Frameworks and platforms stay secondary to the language and the research problem; they are documented in the repositories where they matter.</sub>
+
+---
+
+## Full-stack systems work
+
+I build end to end. The backend is usually where the governing logic, evidence contracts, and durable state live; the interface exists to expose those systems clearly rather than recreate them.
+
+| Layer | Typical work |
+| --- | --- |
+| **Backend & data** | Relational schemas, MySQL persistence, migrations, database-backed sessions, server-side authorization, immutable revisions, append-only histories |
+| **Application & research logic** | Deterministic rules, evidence pipelines, provenance, integrity checks, compiler/runtime boundaries, exports, validation and orchestration |
+| **APIs & protected workflows** | Authenticated handlers, role-aware operations, durable claims and decisions, controlled file access, bounded server-side processing |
+| **Frontend & interaction** | Production web interfaces, research shells, reviewer/operator workflows, responsive application state, cross-platform and native clients |
+| **Delivery & operations** | CI validation, multi-version testing, production builds, migrations, deployment health, runtime and deployed-commit provenance |
+
+Concrete examples: [**Label Lens TTB**](https://github.com/JosephJMWalker-MBA/label-lens-ttb) carries governed review from authenticated UI through server-side authorization, MySQL-backed state, immutable revisions, integrity signing, and production deployment; [**Pyxis**](https://github.com/JosephJMWalker-MBA/pyxis) carries human intent through canonical state, compilation, runtime evidence, persistence, verification, CLI/UI, and portable output.
 
 ---
 
