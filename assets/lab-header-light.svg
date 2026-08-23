@@ -1,0 +1,34 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="1198" height="318" rx="22" fill="#FBFAF7" stroke="#D8D4CC" stroke-width="2"/>
+
+  <text x="58" y="58" fill="#9A7747" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" letter-spacing="2.4">INDEPENDENT RESEARCH LAB</text>
+  <line x1="58" y1="78" x2="650" y2="78" stroke="#D8D4CC"/>
+
+  <text x="58" y="148" fill="#111827" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="54" font-weight="650" letter-spacing="-1.8">Joseph JM Walker</text>
+  <text x="60" y="188" fill="#52606D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" letter-spacing="0.2">Evidence · Provenance · Human Authority</text>
+
+  <text x="59" y="263" fill="#6B7280" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" letter-spacing="1.2">RESEARCH / SYSTEMS / FIELD WORK</text>
+  <text x="420" y="263" fill="#9A7747" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" letter-spacing="1.2">CANTON · OH · USA</text>
+
+  <g opacity="0.96">
+    <line x1="803" y1="85" x2="930" y2="55" stroke="#B8B1A6" stroke-width="1.2"/>
+    <line x1="803" y1="85" x2="887" y2="151" stroke="#B8B1A6" stroke-width="1.2"/>
+    <line x1="887" y1="151" x2="1028" y2="111" stroke="#B8B1A6" stroke-width="1.2"/>
+    <line x1="887" y1="151" x2="968" y2="228" stroke="#B8B1A6" stroke-width="1.2"/>
+    <line x1="968" y1="228" x2="1081" y2="185" stroke="#B8B1A6" stroke-width="1.2"/>
+    <line x1="930" y1="55" x2="1028" y2="111" stroke="#B8B1A6" stroke-width="1.2"/>
+    <line x1="1028" y1="111" x2="1081" y2="185" stroke="#B8B1A6" stroke-width="1.2"/>
+
+    <circle cx="803" cy="85" r="8" fill="#FBFAF7" stroke="#9A7747" stroke-width="2"/>
+    <circle cx="930" cy="55" r="5" fill="#9A7747"/>
+    <circle cx="887" cy="151" r="7" fill="#FBFAF7" stroke="#111827" stroke-width="2"/>
+    <circle cx="1028" cy="111" r="6" fill="#FBFAF7" stroke="#9A7747" stroke-width="2"/>
+    <circle cx="968" cy="228" r="5" fill="#111827"/>
+    <circle cx="1081" cy="185" r="8" fill="#FBFAF7" stroke="#111827" stroke-width="2"/>
+
+    <text x="771" y="119" fill="#7B8490" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" letter-spacing="1">SOURCE</text>
+    <text x="844" y="180" fill="#7B8490" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" letter-spacing="1">EVIDENCE</text>
+    <text x="1018" y="92" fill="#7B8490" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" letter-spacing="1">INFERENCE</text>
+    <text x="1037" y="216" fill="#7B8490" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" letter-spacing="1">AUTHORITY</text>
+  </g>
+</svg>
