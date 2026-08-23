@@ -1,0 +1,38 @@
+name: Refresh lab telemetry
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 12 * * *"
+  push:
+    paths:
+      - "scripts/build_dashboard.py"
+      - ".github/workflows/dashboard.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Build GitHub-backed telemetry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build_dashboard.py
+
+      - name: Commit refreshed telemetry when changed
+        run: |
+          if git diff --quiet -- assets/lab-activity-light.svg assets/lab-activity-dark.svg data/public-lab-telemetry.json; then
+            echo "Telemetry unchanged."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/lab-activity-light.svg assets/lab-activity-dark.svg data/public-lab-telemetry.json
+          git commit -m "Refresh public lab telemetry"
+          git push
