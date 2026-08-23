@@ -1,11 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="300" viewBox="0 0 1120 300" role="img" aria-labelledby="title desc">
-  <title id="title">Public lab telemetry initializing</title>
-  <desc id="desc">The first GitHub-backed telemetry refresh is pending.</desc>
-  <rect width="1120" height="300" rx="18" fill="#0d1117"/>
-  <rect x="1" y="1" width="1118" height="298" rx="17" fill="none" stroke="#30363d"/>
-  <text x="54" y="62" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" letter-spacing="2">PUBLIC LAB TELEMETRY · 12 WEEKS</text>
-  <text x="54" y="115" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="30" font-weight="650">First data refresh queued</text>
-  <text x="54" y="154" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="15">GitHub Actions will replace this bootstrap panel with live public-repository telemetry.</text>
-  <line x1="54" y1="208" x2="1066" y2="208" stroke="#30363d"/>
-  <text x="54" y="246" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">ACTIVITY ≠ QUALITY · PUBLIC REPOSITORIES ONLY</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="560" viewBox="0 0 1120 560" role="img" aria-labelledby="title desc">
+<title id="title">Public lab activity over twelve weeks</title>
+<desc id="desc">Weekly commit activity and repository attention allocation across six selected public research repositories. Commit volume measures activity, not quality or importance.</desc>
+<rect width="1120" height="560" rx="18" fill="#0d1117"/>
+<rect x="1" y="1" width="1118" height="558" rx="17" fill="none" stroke="#30363d"/>
+<text x="54" y="60" fill="#f0f6fc" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" letter-spacing="2">PUBLIC LAB TELEMETRY · 12 WEEKS</text>
+<text x="54" y="98" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="28" font-weight="650">Research activity</text>
+<text x="54" y="125" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14">Commit volume is activity, not evidence of quality, importance, or validation.</text>
+<text x="1066" y="60" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">UPDATED 2026-08-23</text>
+<line x1="54" y1="154.0" x2="704" y2="154.0" stroke="#30363d" stroke-width="1"/>
+<line x1="54" y1="233.3" x2="704" y2="233.3" stroke="#30363d" stroke-width="1"/>
+<line x1="54" y1="312.7" x2="704" y2="312.7" stroke="#30363d" stroke-width="1"/>
+<line x1="54" y1="392.0" x2="704" y2="392.0" stroke="#30363d" stroke-width="1"/>
+<rect x="54.0" y="392.0" width="43.2" height="0.0" rx="3" fill="#58a6ff"/>
+<text x="75.6" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W01</text>
+<rect x="109.2" y="392.0" width="43.2" height="0.0" rx="3" fill="#58a6ff"/>
+<text x="130.8" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W02</text>
+<rect x="164.3" y="387.5" width="43.2" height="4.5" rx="3" fill="#58a6ff"/>
+<text x="185.9" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W03</text>
+<rect x="219.5" y="375.3" width="43.2" height="16.7" rx="3" fill="#58a6ff"/>
+<text x="241.1" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W04</text>
+<rect x="274.7" y="352.7" width="43.2" height="39.3" rx="3" fill="#58a6ff"/>
+<text x="296.2" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W05</text>
+<rect x="329.8" y="352.9" width="43.2" height="39.1" rx="3" fill="#58a6ff"/>
+<text x="351.4" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W06</text>
+<rect x="385.0" y="369.9" width="43.2" height="22.1" rx="3" fill="#58a6ff"/>
+<text x="406.6" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W07</text>
+<rect x="440.2" y="383.0" width="43.2" height="9.0" rx="3" fill="#58a6ff"/>
+<text x="461.7" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W08</text>
+<rect x="495.3" y="389.0" width="43.2" height="3.0" rx="3" fill="#58a6ff"/>
+<text x="516.9" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W09</text>
+<rect x="550.5" y="217.7" width="43.2" height="174.3" rx="3" fill="#58a6ff"/>
+<text x="572.1" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W10</text>
+<rect x="605.7" y="180.0" width="43.2" height="212.0" rx="3" fill="#58a6ff"/>
+<text x="627.2" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W11</text>
+<rect x="660.8" y="392.0" width="43.2" height="0.0" rx="3" fill="#58a6ff"/>
+<text x="682.4" y="416" text-anchor="middle" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">W12</text>
+<text x="54" y="136" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">WEEKLY COMMITS</text>
+<text x="704" y="136" text-anchor="end" fill="#f0f6fc" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">1950 TOTAL</text>
+<line x1="730" y1="142" x2="730" y2="420" stroke="#30363d"/>
+<text x="758" y="136" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">ATTENTION ALLOCATION</text>
+<text x="758" y="168" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">Hermeneia</text>
+<text x="1064" y="168" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">155</text>
+<rect x="758" y="177" width="306" height="5" rx="2.5" fill="#161b22"/>
+<rect x="758" y="177" width="61.8" height="5" rx="2.5" fill="#58a6ff"/>
+<text x="758" y="211" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">Proofline</text>
+<text x="1064" y="211" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">383</text>
+<rect x="758" y="220" width="306" height="5" rx="2.5" fill="#161b22"/>
+<rect x="758" y="220" width="152.6" height="5" rx="2.5" fill="#58a6ff"/>
+<text x="758" y="254" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">ChessHeat</text>
+<text x="1064" y="254" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">212</text>
+<rect x="758" y="263" width="306" height="5" rx="2.5" fill="#161b22"/>
+<rect x="758" y="263" width="84.5" height="5" rx="2.5" fill="#58a6ff"/>
+<text x="758" y="297" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">label-lens-ttb</text>
+<text x="1064" y="297" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">253</text>
+<rect x="758" y="306" width="306" height="5" rx="2.5" fill="#161b22"/>
+<rect x="758" y="306" width="100.8" height="5" rx="2.5" fill="#58a6ff"/>
+<text x="758" y="340" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">pyxis</text>
+<text x="1064" y="340" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">768</text>
+<rect x="758" y="349" width="306" height="5" rx="2.5" fill="#161b22"/>
+<rect x="758" y="349" width="306.0" height="5" rx="2.5" fill="#58a6ff"/>
+<text x="758" y="383" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">professional-provenance-publisher</text>
+<text x="1064" y="383" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">179</text>
+<rect x="758" y="392" width="306" height="5" rx="2.5" fill="#161b22"/>
+<rect x="758" y="392" width="71.3" height="5" rx="2.5" fill="#58a6ff"/>
+<text x="54" y="474" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="1">12W COMMITS</text>
+<text x="54" y="504" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22" font-weight="650">1950</text>
+<text x="274" y="474" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="1">ACTIVE SYSTEMS</text>
+<text x="274" y="504" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22" font-weight="650">6/6</text>
+<text x="494" y="474" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="1">DATA SOURCE</text>
+<text x="494" y="504" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22" font-weight="650">GITHUB</text>
+<text x="1066" y="522" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10">PUBLIC REPOSITORIES ONLY</text>
 </svg>

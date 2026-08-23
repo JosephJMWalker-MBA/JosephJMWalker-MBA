@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-08-23T21:58:18+00:00",
+  "scope": "selected public repositories only",
+  "interpretation": "commit volume measures activity, not quality, importance, or validation strength",
+  "weeks": 12,
+  "weekly_total": [
+    0,
+    0,
+    17,
+    63,
+    148,
+    147,
+    83,
+    34,
+    4,
+    656,
+    798,
+    0
+  ],
+  "repos": [
+    {
+      "repo": "Hermeneia",
+      "available": true,
+      "weekly": [
+        0,
+        0,
+        17,
+        63,
+        23,
+        0,
+        0,
+        0,
+        0,
+        35,
+        17,
+        0
+      ],
+      "total": 155,
+      "latest_commit": "2026-08-22T16:39:38Z"
+    },
+    {
+      "repo": "Proofline",
+      "available": true,
+      "weekly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        383,
+        0
+      ],
+      "total": 383,
+      "latest_commit": "2026-08-22T19:31:11Z"
+    },
+    {
+      "repo": "ChessHeat",
+      "available": true,
+      "weekly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        93,
+        119,
+        0
+      ],
+      "total": 212,
+      "latest_commit": "2026-08-22T22:27:45Z"
+    },
+    {
+      "repo": "label-lens-ttb",
+      "available": true,
+      "weekly": [
+        0,
+        0,
+        0,
+        0,
+        97,
+        92,
+        26,
+        34,
+        4,
+        0,
+        0,
+        0
+      ],
+      "total": 253,
+      "latest_commit": "2026-08-03T13:45:43Z"
+    },
+    {
+      "repo": "pyxis",
+      "available": true,
+      "weekly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        528,
+        240,
+        0
+      ],
+      "total": 768,
+      "latest_commit": "2026-08-23T03:35:13Z"
+    },
+    {
+      "repo": "professional-provenance-publisher",
+      "available": true,
+      "weekly": [
+        0,
+        0,
+        0,
+        0,
+        28,
+        55,
+        57,
+        0,
+        0,
+        0,
+        39,
+        0
+      ],
+      "total": 179,
+      "latest_commit": "2026-08-19T19:51:34Z"
+    }
+  ]
+}
