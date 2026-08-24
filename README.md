@@ -49,6 +49,18 @@ The implementation layer changes with the problem. These are the primary languag
 
 ---
 
+## Selected technical capabilities
+
+| Area | Working tools & methods |
+| --- | --- |
+| **AI & model systems** | LLMs, RAG, vector databases, transformers, NLP, prompt engineering, fine-tuning, LangChain |
+| **ML & interpretability** | PyTorch, TensorFlow, scikit-learn, XGBoost, SHAP, LIME, Integrated Gradients, data science |
+| **Vision & edge** | Computer vision, OpenCV, OCR, Edge AI |
+| **Production systems** | Systems/software architecture, SQL and database design, REST/API development, Docker, CI/CD, deployment, environment configuration, MLOps |
+| **Application layer** | Next.js, React, HTML5, CSS3, BTCPay Server |
+
+---
+
 ## Full-stack systems work
 
 I build end to end. The backend is usually where the governing logic, evidence contracts, and durable state live; the interface exists to expose those systems clearly rather than recreate them.
@@ -78,6 +90,23 @@ Infrastructure that keeps source records, derived observations, machine assistan
 **Measurement & experimental method**  
 Research where attractive explanations are allowed to fail, negative results remain part of the record, and the model has to earn the visualization.  
 → [ChessHeat](https://github.com/JosephJMWalker-MBA/ChessHeat)
+
+---
+
+## Selected publications
+
+A small cross-section of the larger publication record, chosen for direct connection to the research program represented here.
+
+**AI systems, provenance & control**  
+- *Technical Disclosure: Provenance-Aware Guardrails for Outcome-Grounded AI Learning Systems*
+- *A Topology for Deployment Validity: On Versioning, Runtime State, and Provenance in AI Systems*
+- *Anchored Generation: A General Architecture for Controlled Synthetic Data, Semantic Drift Reduction, and Equitable Model Training*
+- *Python for Gated Evolution: A Conceptual Framework for AI-Native System Control*
+
+**Governance, oversight & digital systems**  
+- *Human Oversight in Automated Administrative Systems*
+- *Digital Due Process as System Architecture*
+- *The Right to Dignity, Voice, and Redress: A Due Process Framework for Emotionally Aware AI Systems*
 
 ---
 
