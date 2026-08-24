@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/lab-header-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/lab-header-light.svg">
-  <img alt="Joseph JM Walker — independent research lab for evidence, provenance, and human authority" src="./assets/lab-header-light.svg" width="100%">
+  <img alt="Joseph JM Walker, MBA — independent research lab for evidence, provenance, and human authority" src="./assets/lab-header-light.svg" width="100%">
 </picture>
 
 > I build research systems that preserve the difference between **evidence, inference, and authority**.
