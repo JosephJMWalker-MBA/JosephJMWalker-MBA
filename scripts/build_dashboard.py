@@ -8,9 +8,9 @@ or validation strength. Private repositories are intentionally excluded.
 from __future__ import annotations
 
 import json
+import math
 import os
 import time
-import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -129,6 +129,30 @@ def esc(text: object) -> str:
     )
 
 
+def nice_step(value: float) -> float:
+    """Return a readable chart interval close to value."""
+    if value <= 0:
+        return 1
+    exponent = math.floor(math.log10(value))
+    magnitude = 10**exponent
+    fraction = value / magnitude
+    if fraction <= 1:
+        nice = 1
+    elif fraction <= 2:
+        nice = 2
+    elif fraction <= 3:
+        nice = 3
+    elif fraction <= 5:
+        nice = 5
+    else:
+        nice = 10
+    return nice * magnitude
+
+
+def fmt_number(value: float | int) -> str:
+    return str(int(value)) if float(value).is_integer() else f"{value:g}"
+
+
 def render_svg(snapshot: dict, *, dark: bool) -> str:
     if dark:
         bg, panel, text, muted, rule, accent = "#0d1117", "#161b22", "#f0f6fc", "#8b949e", "#30363d", "#58a6ff"
@@ -138,46 +162,58 @@ def render_svg(snapshot: dict, *, dark: bool) -> str:
     repos = snapshot["repos"]
     weekly = snapshot["weekly_total"]
     labels = snapshot["week_labels"]
+    starts = snapshot["week_starts"]
     total = sum(weekly)
     active = sum(1 for r in repos if r["total"] > 0)
     max_week = max(max(weekly), 1)
     max_repo = max(max((r["total"] for r in repos), default=0), 1)
 
+    step = nice_step(max_week / 3)
+    axis_max = max(step, math.ceil(max_week / step) * step)
+    tick_count = int(round(axis_max / step))
+    ticks = [i * step for i in range(tick_count + 1)]
+
     width, height = 1120, 560
-    chart_x, chart_y, chart_w, chart_h = 54, 154, 650, 238
+    chart_x, chart_y, chart_w, chart_h = 82, 166, 622, 226
     allocation_x, allocation_y = 758, 154
     allocation_w = 306
 
     pieces = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
         '<title id="title">Public lab activity over twelve weeks</title>',
-        '<desc id="desc">Weekly commit activity and repository attention allocation across six selected public research repositories. The current week is partial. Commit volume measures activity, not quality or importance.</desc>',
+        '<desc id="desc">Weekly commit activity and repository attention allocation across six selected public research repositories. Every weekly bar is labeled with its commit count and the vertical axis shows commits per week. The current week is partial. Commit volume measures activity, not quality or importance.</desc>',
         f'<rect width="{width}" height="{height}" rx="18" fill="{bg}"/>',
         f'<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="17" fill="none" stroke="{rule}"/>',
         f'<text x="54" y="60" fill="{text}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" letter-spacing="2">PUBLIC LAB TELEMETRY · 12 WEEKS</text>',
         f'<text x="54" y="98" fill="{text}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="28" font-weight="650">Research activity</text>',
         f'<text x="54" y="125" fill="{muted}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14">Commit volume is activity, not evidence of quality, importance, or validation.</text>',
         f'<text x="1066" y="60" text-anchor="end" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">UPDATED {esc(snapshot["generated_at"][:10])}</text>',
+        f'<text x="{chart_x}" y="145" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">COMMITS / WEEK</text>',
+        f'<text x="{chart_x + chart_w}" y="145" text-anchor="end" fill="{text}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">{total} TOTAL</text>',
     ]
 
-    for i in range(4):
-        y = chart_y + (chart_h / 3) * i
+    for tick in ticks:
+        y = chart_y + chart_h - (tick / axis_max) * chart_h
         pieces.append(f'<line x1="{chart_x}" y1="{y:.1f}" x2="{chart_x + chart_w}" y2="{y:.1f}" stroke="{rule}" stroke-width="1"/>')
+        pieces.append(f'<text x="{chart_x - 10}" y="{y + 3:.1f}" text-anchor="end" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">{fmt_number(tick)}</text>')
 
-    gap = 12
+    gap = 10
     bar_w = (chart_w - gap * (WEEKS - 1)) / WEEKS
     for i, count in enumerate(weekly):
-        h = 0 if count == 0 else max(3, (count / max_week) * (chart_h - 26))
+        h = 0 if count == 0 else max(3, (count / axis_max) * chart_h)
         x = chart_x + i * (bar_w + gap)
         y = chart_y + chart_h - h
         opacity = "0.65" if i == WEEKS - 1 else "1"
-        pieces.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_w:.1f}" height="{h:.1f}" rx="3" fill="{accent}" opacity="{opacity}"/>')
         suffix = "*" if i == WEEKS - 1 else ""
-        pieces.append(f'<text x="{x + bar_w/2:.1f}" y="{chart_y + chart_h + 24}" text-anchor="middle" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">{esc(labels[i])}{suffix}</text>')
+        value_y = max(chart_y + 10, y - 7)
+        tooltip = f'Week of {starts[i]}: {count} commits' + (' (current week partial)' if i == WEEKS - 1 else '')
+        pieces.append(f'<g aria-label="{esc(tooltip)}"><title>{esc(tooltip)}</title>')
+        pieces.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_w:.1f}" height="{h:.1f}" rx="3" fill="{accent}" opacity="{opacity}"/>')
+        pieces.append(f'<text x="{x + bar_w/2:.1f}" y="{value_y:.1f}" text-anchor="middle" fill="{text}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" font-weight="650">{count}{suffix}</text>')
+        pieces.append('</g>')
+        pieces.append(f'<text x="{x + bar_w/2:.1f}" y="{chart_y + chart_h + 24}" text-anchor="middle" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">{esc(labels[i])}</text>')
 
     pieces.extend([
-        f'<text x="{chart_x}" y="{chart_y - 18}" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">WEEKLY COMMITS</text>',
-        f'<text x="{chart_x + chart_w}" y="{chart_y - 18}" text-anchor="end" fill="{text}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">{total} TOTAL</text>',
         f'<line x1="730" y1="142" x2="730" y2="420" stroke="{rule}"/>',
         f'<text x="{allocation_x}" y="{allocation_y - 18}" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">ATTENTION ALLOCATION</text>',
     ])
@@ -187,11 +223,15 @@ def render_svg(snapshot: dict, *, dark: bool) -> str:
         y = allocation_y + i * row_h
         label = repo["repo"]
         count = repo["total"]
+        share = (count / total * 100) if total else 0
+        repo_tip = f'{label}: {count} commits, {share:.1f}% of selected 12-week activity'
+        pieces.append(f'<g aria-label="{esc(repo_tip)}"><title>{esc(repo_tip)}</title>')
         pieces.append(f'<text x="{allocation_x}" y="{y + 14}" fill="{text}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">{esc(label)}</text>')
         pieces.append(f'<text x="{allocation_x + allocation_w}" y="{y + 14}" text-anchor="end" fill="{muted}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">{count}</text>')
         pieces.append(f'<rect x="{allocation_x}" y="{y + 23}" width="{allocation_w}" height="5" rx="2.5" fill="{panel}"/>')
         fill_w = 0 if count == 0 else max(3, (count / max_repo) * allocation_w)
         pieces.append(f'<rect x="{allocation_x}" y="{y + 23}" width="{fill_w:.1f}" height="5" rx="2.5" fill="{accent}"/>')
+        pieces.append('</g>')
 
     metric_y = 474
     metrics = [
