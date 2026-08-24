@@ -93,20 +93,22 @@ Research where attractive explanations are allowed to fail, negative results rem
 
 ---
 
-## Selected publications
+## Selected publications & technical disclosures
 
-A small cross-section of the larger publication record, chosen for direct connection to the research program represented here.
+A deliberately small cross-section of the larger publication record, selected for its connection to the systems and research themes represented here.
 
-**AI systems, provenance & control**  
-- *Technical Disclosure: Provenance-Aware Guardrails for Outcome-Grounded AI Learning Systems*
-- *A Topology for Deployment Validity: On Versioning, Runtime State, and Provenance in AI Systems*
-- *Anchored Generation: A General Architecture for Controlled Synthetic Data, Semantic Drift Reduction, and Equitable Model Training*
-- *Python for Gated Evolution: A Conceptual Framework for AI-Native System Control*
+| Publication | Venue | Year |
+| --- | --- | ---: |
+| [**System and Method for User-Owned Longitudinal Memory and Interpretation System with a Provenance-Tagged Interpretive Ledger, Engine-Interchangeable Inference, Federated Validation, and Generational Maintenance**](https://www.tdcommons.org/dpubs_series/10374/) | Technical Disclosure Commons | 2026 |
+| [**The Clarity Economy: The Fifth Industrial Revolution and the Fight for Signal Integrity**](https://www.amazon.com/dp/B0H26SWJHZ) | Amazon Kindle Direct Publishing | 2026 |
+| [**Deliberative Intelligence, Iterative Consensus, and Outcome-Grounded ‘Wisdom’ via Reality Backpropagation**](https://www.tdcommons.org/dpubs_series/9840/) | Technical Disclosure Commons | 2026 |
+| [**Coordinated, heterogeneous model composition under a shared governance and audit layer**](https://www.tdcommons.org/dpubs_series/9043/) | Technical Disclosure Commons | 2025 |
+| [**[Conversational Operating System] Dynamic System Prompt Architecture for Context State Governance in Large Language Models**](https://www.tdcommons.org/dpubs_series/9039/) | Technical Disclosure Commons | 2025 |
+| [**Python 4.0 — A Gated, Forward-Safe Evolution**](https://www.tdcommons.org/dpubs_series/8766/) | Technical Disclosure Commons | 2025 |
+| [**Anchored AI: Intent-Extraction, Anchor-Weighted Generation, and Synthetic Collapse Prevention for Human-Aligned AI**](https://www.tdcommons.org/dpubs_series/8677/) | Technical Disclosure Commons | 2025 |
+| [**Unified, Site-Selectable Waterless Cooling Architecture for High-Density AI Data Centers**](https://www.tdcommons.org/dpubs_series/8684/) | Technical Disclosure Commons | 2025 |
 
-**Governance, oversight & digital systems**  
-- *Human Oversight in Automated Administrative Systems*
-- *Digital Due Process as System Architecture*
-- *The Right to Dignity, Voice, and Redress: A Due Process Framework for Emotionally Aware AI Systems*
+<sub>The complete publication record is maintained elsewhere; this profile highlights work most relevant to the lab.</sub>
 
 ---
 
