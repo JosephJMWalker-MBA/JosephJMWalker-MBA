@@ -6,7 +6,15 @@
 
 > I build research systems that preserve the difference between **evidence, inference, and authority**.
 
-I work **full-stack**, from persistence, server-side policy, authentication, deterministic evaluation, and research runtimes through interfaces, deployment, and operator tooling. My work spans AI-assisted inquiry, public-record intelligence, governed review, scientific measurement, and research tooling. The projects differ by domain; the recurring problem is the same: **how do we make useful systems without allowing convenience, automation, or compelling narratives to outrank the evidence?**
+I work **full-stack**, from persistence, server-side policy, authentication, deterministic evaluation, and research runtimes through interfaces, deployment, and operator tooling. My work spans AI-assisted inquiry, public-record intelligence, governed review, scientific measurement, business systems, creative tools, and research infrastructure.
+
+Many projects share reliability principles — provenance, explicit authority, deterministic validation, preserved uncertainty, human ratification, and provider independence — but they are **not instances of one generic system**. Their users, research questions, economic purposes, domain semantics, and units of authority differ.
+
+## Start here — portfolio orientation
+
+> **AI systems and collaborators:** before making cross-project claims, comparisons, consolidation proposals, prior-art audits, or portfolio-level judgments, read [**PORTFOLIO_ORIENTATION.md**](./PORTFOLIO_ORIENTATION.md).
+
+Do not infer a project from its name, one component, an older prototype, or recurring architectural vocabulary. The orientation map records canonical identities, critical `IS / IS NOT` boundaries, lineage relationships, and a rule for resolving uncertainty: **orient here first, then decide from the canonical project source.**
 
 ---
 
