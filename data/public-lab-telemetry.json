@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T13:15:12+00:00",
+  "generated_at": "2026-08-26T13:26:18+00:00",
   "scope": "selected public repositories only",
   "interpretation": "commit volume measures activity, not quality, importance, or validation strength",
   "weeks": 12,
@@ -44,7 +44,7 @@
     8,
     762,
     832,
-    137
+    307
   ],
   "repos": [
     {
@@ -82,10 +82,10 @@
         0,
         0,
         441,
-        137
+        197
       ],
-      "total": 578,
-      "latest_commit": "2026-08-25T05:46:19Z"
+      "total": 638,
+      "latest_commit": "2026-08-25T17:46:32Z"
     },
     {
       "repo": "ChessHeat",
@@ -142,10 +142,10 @@
         0,
         566,
         268,
-        0
+        110
       ],
-      "total": 834,
-      "latest_commit": "2026-08-23T03:35:13Z"
+      "total": 944,
+      "latest_commit": "2026-08-25T23:18:51Z"
     },
     {
       "repo": "professional-provenance-publisher",
