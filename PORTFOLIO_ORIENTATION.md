@@ -6,6 +6,8 @@ The repositories in this account are not one generic system repeated across many
 
 Many of them share engineering principles — provenance, explicit authority, deterministic validation around probabilistic inference, preserved uncertainty, append-oriented history, human ratification, and provider independence — but **shared principles do not make the projects interchangeable or redundant**.
 
+**Maintaining this map:** see [**PORTFOLIO_ORIENTATION_MAINTENANCE.md**](./PORTFOLIO_ORIENTATION_MAINTENANCE.md) for the methodology used to add, revise, reclassify, or retire entries without losing authority or lineage.
+
 ## Orientation rules
 
 Before evaluating, comparing, consolidating, or auditing projects:
