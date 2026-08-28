@@ -79,7 +79,7 @@ For each cycle, preserve enough information to reconstruct what happened:
 
 ```text
 article / artifact
-tesis or core question
+thesis or core question
 publication date
 recipient
 why this recipient
