@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T16:46:46+00:00",
+  "generated_at": "2026-08-30T16:46:08+00:00",
   "scope": "selected public repositories only",
   "interpretation": "commit volume measures activity, not quality, importance, or validation strength",
   "weeks": 12,
@@ -44,7 +44,7 @@
     8,
     762,
     834,
-    598
+    653
   ],
   "repos": [
     {
@@ -62,10 +62,10 @@
         4,
         44,
         25,
-        34
+        52
       ],
-      "total": 236,
-      "latest_commit": "2026-08-29T16:16:55Z"
+      "total": 254,
+      "latest_commit": "2026-08-30T16:00:50Z"
     },
     {
       "repo": "Proofline",
@@ -142,10 +142,10 @@
         0,
         566,
         268,
-        359
+        396
       ],
-      "total": 1193,
-      "latest_commit": "2026-08-29T03:44:01Z"
+      "total": 1230,
+      "latest_commit": "2026-08-29T22:22:21Z"
     },
     {
       "repo": "professional-provenance-publisher",
