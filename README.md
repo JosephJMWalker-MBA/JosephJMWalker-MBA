@@ -1,14 +1,14 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/lab-header-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/lab-header-light.svg">
-  <img alt="Joseph JM Walker, MBA — independent research lab for evidence, provenance, and human authority" src="./assets/lab-header-light.svg" width="100%">
+  <img alt="Joseph JM Walker, MBA — independent research lab for evidence, provenance, interpretation, and human authority" src="./assets/lab-header-light.svg" width="100%">
 </picture>
 
-> I build research systems that preserve the difference between **evidence, inference, and authority**.
+> I build research and operating systems that preserve the difference between **evidence, inference, authority, and intent**.
 
-I work **full-stack**, from persistence, server-side policy, authentication, deterministic evaluation, and research runtimes through interfaces, deployment, and operator tooling. My work spans AI-assisted inquiry, public-record intelligence, governed review, scientific measurement, business systems, creative tools, and research infrastructure.
+I work **full-stack**, from research design, persistence, deterministic evaluation, provenance, authentication, and model boundaries through interfaces, deployment, and operator tooling. My work spans AI-assisted inquiry, public-record intelligence, governed review, scientific measurement, semantic memory, experimental games, business systems, creative production, and research infrastructure.
 
-Many projects share reliability principles — provenance, explicit authority, deterministic validation, preserved uncertainty, human ratification, and provider independence — but they are **not instances of one generic system**. Their users, research questions, economic purposes, domain semantics, and units of authority differ.
+Many projects share reliability principles — preserved source, explicit authority, deterministic validation around probabilistic inference, visible uncertainty, human ratification, rebuildable derived state, and provider independence — but they are **not instances of one generic system**. Their users, questions, economic purposes, domain semantics, and units of authority differ.
 
 ## Start here — portfolio orientation
 
@@ -16,17 +16,36 @@ Many projects share reliability principles — provenance, explicit authority, d
 
 Do not infer a project from its name, one component, an older prototype, or recurring architectural vocabulary. The orientation map records canonical identities, critical `IS / IS NOT` boundaries, lineage relationships, and a rule for resolving uncertainty: **orient here first, then decide from the canonical project source.**
 
+The broader portfolio also includes private applied systems, commercial infrastructure, creative-production tools, protocols, and preservation work. Public research repositories are highlighted here because their claims and evidence can be inspected directly.
+
 ---
 
-## Lab status
+## Current public work
 
-| System | Research question | State |
+| System | Research / engineering question | Current state |
 | --- | --- | --- |
 | [**Hermeneia**](https://github.com/JosephJMWalker-MBA/Hermeneia) | How can understanding evolve without losing provenance or human authority? | `VALIDATION` |
+| [**CTRT**](https://github.com/JosephJMWalker-MBA/CTRT) | Can interchangeable content-analysis instruments be evaluated without collapsing evidence, uncertainty, disagreement, and authority into one score? | `PHASE 1B · EMPIRICAL EVALUATION` |
 | [**Proofline**](https://github.com/JosephJMWalker-MBA/Proofline) | How can public records become reproducible investigative evidence without automating accusation? | `FIELD VALIDATION` |
-| [**ChessHeat**](https://github.com/JosephJMWalker-MBA/ChessHeat) | Which spatial claims about chess consequence can actually be earned by measurement? | `PREREGISTRATION` |
+| [**ChessHeat**](https://github.com/JosephJMWalker-MBA/ChessHeat) | Which spatial claims about chess consequence can actually be earned by measurement? | `PREREGISTRATION / MEASUREMENT` |
+| [**Crownline**](https://github.com/JosephJMWalker-MBA/crownline) | Can an original strategy game evolve through measured rules design, preserved negative results, and reproducible AI benchmarking? | `V1.1 CANDIDATE PLAYTEST` |
+| [**Memory Lab**](https://github.com/JosephJMWalker-MBA/memory-lab) | How can semantic memory remain provenance-aware when canonical source, retrieval indexes, and derived memory evolve independently? | `RESEARCH HARNESS` |
+| [**TRACE**](https://github.com/JosephJMWalker-MBA/TRACE) | What must survive so consequential human + agent work remains reproducible across people, models, sessions, tools, and hardware? | `EXPERIMENTAL / PRE-SPECIFICATION` |
+| [**Continuity Node**](https://github.com/JosephJMWalker-MBA/Continuity-Node) | Can user-owned longitudinal memory preserve source, interpretation, dissent, and rebuildability across changing inference engines? | `REFERENCE IMPLEMENTATION` |
 | [**Label Lens TTB**](https://github.com/JosephJMWalker-MBA/label-lens-ttb) | How can regulatory review be assisted without pretending software has regulatory authority? | `DEPLOYED PROTOTYPE` |
-| [**Pyxis**](https://github.com/JosephJMWalker-MBA/pyxis) | Can research and software transformations remain inspectable from intent through evidence? | `ACTIVE DEVELOPMENT` |
+| [**Pyxis**](https://github.com/JosephJMWalker-MBA/pyxis) | Can research and software transformations remain inspectable from human intent through runtime evidence? | `ACTIVE DEVELOPMENT` |
+
+---
+
+## Research identity, publication & reflection
+
+I keep three surfaces intentionally separate:
+
+- **GitHub** — executable systems, protocols, experiments, evidence, and technical history.
+- **[ORCID 0009-0005-5099-807X](https://orcid.org/0009-0005-5099-807X)** — formal research identity and research-output record.
+- **[Substack](https://helloiamjoseph.substack.com/)** — reflections from the builder while the work is still being built.
+
+That separation matters: a research artifact, a defensive publication, a working repository, and a reflection about the work are different kinds of claims.
 
 ---
 
@@ -42,62 +61,69 @@ Do not infer a project from its name, one component, an older prototype, or recu
 
 ---
 
-## Languages in the lab
+## Research programs
 
-The implementation layer changes with the problem. These are the primary languages I reach for across the lab:
+**Understanding, continuity & human authority**  
+Systems for preserving how understanding, memory, and intent develop rather than retaining only a final answer or current model state.  
+→ [Hermeneia](https://github.com/JosephJMWalker-MBA/Hermeneia) · [Continuity Node](https://github.com/JosephJMWalker-MBA/Continuity-Node) · [Memory Lab](https://github.com/JosephJMWalker-MBA/memory-lab) · [TRACE](https://github.com/JosephJMWalker-MBA/TRACE) · [Pyxis](https://github.com/JosephJMWalker-MBA/pyxis)
 
-| Language | Typical role |
-| --- | --- |
-| **`Python`** | Research systems, data and ML work, automation, experimental tooling |
-| **`TypeScript`** | Production web systems, governed workflows, interfaces and application logic |
-| **`Dart`** | Cross-platform application development |
-| **`Swift`** | Native Apple-platform prototypes and interfaces |
+**Evidence, provenance & governed review**  
+Infrastructure that keeps source records, derived observations, machine assistance, and human judgment distinguishable.  
+→ [Proofline](https://github.com/JosephJMWalker-MBA/Proofline) · [Label Lens TTB](https://github.com/JosephJMWalker-MBA/label-lens-ttb) · [Professional Provenance Publisher](https://github.com/JosephJMWalker-MBA/professional-provenance-publisher)
 
-<sub>Frameworks and platforms stay secondary to the language and the research problem; they are documented in the repositories where they matter.</sub>
+**Measurement & experimental method**  
+Research where attractive explanations are allowed to fail, evaluation gates are stated before promotion, disagreement remains visible, and negative results stay in the record.  
+→ [CTRT](https://github.com/JosephJMWalker-MBA/CTRT) · [ChessHeat](https://github.com/JosephJMWalker-MBA/ChessHeat)
+
+**Rules, strategy & measurable AI**  
+Original game design used as a controlled environment for rules research, human playtesting, AI benchmarking, and hypothesis rejection.  
+→ [Crownline](https://github.com/JosephJMWalker-MBA/crownline)
 
 ---
 
-## Selected technical capabilities
+## How I work
 
-| Area | Working tools & methods |
+| Principle | What it means in practice |
 | --- | --- |
-| **AI & model systems** | LLMs, RAG, vector databases, transformers, NLP, prompt engineering, fine-tuning, LangChain |
-| **ML & interpretability** | PyTorch, TensorFlow, scikit-learn, XGBoost, SHAP, LIME, Integrated Gradients, data science |
-| **Vision & edge** | Computer vision, OpenCV, OCR, Edge AI |
-| **Production systems** | Systems/software architecture, SQL and database design, REST/API development, Docker, CI/CD, deployment, environment configuration, MLOps |
-| **Application layer** | Next.js, React, HTML5, CSS3, BTCPay Server |
+| **Preserve source** | Canonical evidence should not be silently rewritten to match later interpretations. |
+| **Separate evidence from interpretation** | Extraction, measurement, model output, explanation, recommendation, and human judgment are different acts. |
+| **Keep authority explicit** | Software may assist, measure, rank, or propose without pretending to hold legal, scientific, regulatory, or human authority it does not have. |
+| **Precommit consequential evaluation** | Where results can bias the rule, freeze the protocol, gate, corpus, or comparison before looking at the outcome. |
+| **Preserve negative results** | Rejected hypotheses and failed experiments narrow the search space and should remain inspectable. |
+| **Make derived state rebuildable** | Indexes, projections, summaries, and other derived layers should be reconstructable from durable canonical records where practical. |
+| **Keep providers replaceable** | Models and vendors belong behind explicit interfaces when continuity matters more than allegiance to one provider. |
+| **Build only what earns custom ownership** | Mature libraries and platforms should be reused when they solve the commodity layer; custom systems are justified by control, evidence, economics, interoperability, or research needs. |
+
+---
+
+## Technical surface
+
+The implementation layer changes with the problem. Current work most often uses:
+
+| Area | Working surface |
+| --- | --- |
+| **Research & backend** | Python, deterministic contracts, JSON/JSON Schema, CLI tooling, experiment runners, test harnesses |
+| **Application systems** | TypeScript, React, Next.js, REST/API development, authenticated workflows, server-side policy |
+| **Persistence & provenance** | SQL/MySQL, SQLite, content-addressed artifacts, append-oriented ledgers, immutable revisions, canonical hashes |
+| **Retrieval & model boundaries** | lexical + vector retrieval, Chroma/HNSW, provider-neutral inference adapters, local-model interfaces, evidence-bearing model evaluation |
+| **Interactive systems** | WebGL/Three.js, browser research surfaces, reviewer/operator interfaces, Dart and Swift where native clients are the right boundary |
+| **Delivery** | CI validation, migrations, deployment verification, environment fingerprints, reproducible preflight and runtime evidence |
+
+Frameworks stay secondary to the research or operating problem; repository documentation records the implementation choices where they matter.
 
 ---
 
 ## Full-stack systems work
 
-I build end to end. The backend is usually where the governing logic, evidence contracts, and durable state live; the interface exists to expose those systems clearly rather than recreate them.
+I build end to end. The backend is usually where governing logic, evidence contracts, and durable state live; the interface exists to expose those systems clearly rather than recreate their authority in the browser.
 
-| Layer | Typical work |
-| --- | --- |
-| **Backend & data** | Relational schemas, MySQL persistence, migrations, database-backed sessions, server-side authorization, immutable revisions, append-only histories |
-| **Application & research logic** | Deterministic rules, evidence pipelines, provenance, integrity checks, compiler/runtime boundaries, exports, validation and orchestration |
-| **APIs & protected workflows** | Authenticated handlers, role-aware operations, durable claims and decisions, controlled file access, bounded server-side processing |
-| **Frontend & interaction** | Production web interfaces, research shells, reviewer/operator workflows, responsive application state, cross-platform and native clients |
-| **Delivery & operations** | CI validation, multi-version testing, production builds, migrations, deployment health, runtime and deployed-commit provenance |
+Concrete examples:
 
-Concrete examples: [**Label Lens TTB**](https://github.com/JosephJMWalker-MBA/label-lens-ttb) carries governed review from authenticated UI through server-side authorization, MySQL-backed state, immutable revisions, integrity signing, and production deployment; [**Pyxis**](https://github.com/JosephJMWalker-MBA/pyxis) carries human intent through canonical state, compilation, runtime evidence, persistence, verification, CLI/UI, and portable output.
-
----
-
-## Research programs
-
-**Understanding & interpretation**  
-Systems for preserving how understanding develops rather than retaining only the final answer.  
-→ [Hermeneia](https://github.com/JosephJMWalker-MBA/Hermeneia) · [Pyxis](https://github.com/JosephJMWalker-MBA/pyxis)
-
-**Evidence, provenance & authority**  
-Infrastructure that keeps source records, derived observations, machine assistance, and human judgment distinguishable.  
-→ [Proofline](https://github.com/JosephJMWalker-MBA/Proofline) · [Label Lens TTB](https://github.com/JosephJMWalker-MBA/label-lens-ttb)
-
-**Measurement & experimental method**  
-Research where attractive explanations are allowed to fail, negative results remain part of the record, and the model has to earn the visualization.  
-→ [ChessHeat](https://github.com/JosephJMWalker-MBA/ChessHeat)
+- [**Label Lens TTB**](https://github.com/JosephJMWalker-MBA/label-lens-ttb) carries governed review from authenticated UI through server-side authorization, MySQL-backed state, immutable revisions, integrity signing, and production deployment.
+- [**Pyxis**](https://github.com/JosephJMWalker-MBA/pyxis) carries human intent through canonical state, compilation, runtime evidence, persistence, verification, CLI/UI, and portable output.
+- [**CTRT**](https://github.com/JosephJMWalker-MBA/CTRT) carries frozen research plans through candidate eligibility, canonical artifacts, governed execution, append-only storage, human-reference collection, and preregistered evaluation.
+- [**Crownline**](https://github.com/JosephJMWalker-MBA/crownline) keeps authoritative game rules and AI policy server-side while exposing a playable WebGL client, reproducible benchmarks, and preserved research conclusions.
+- [**Memory Lab**](https://github.com/JosephJMWalker-MBA/memory-lab) separates immutable source snapshots, rebuildable lexical/vector indexes, and provenance-bearing derived memory while validating incremental mutation and rollback behavior.
 
 ---
 
@@ -116,15 +142,17 @@ A deliberately small cross-section of the larger publication record, selected fo
 | [**Anchored AI: Intent-Extraction, Anchor-Weighted Generation, and Synthetic Collapse Prevention for Human-Aligned AI**](https://www.tdcommons.org/dpubs_series/8677/) | Technical Disclosure Commons | 2025 |
 | [**Unified, Site-Selectable Waterless Cooling Architecture for High-Density AI Data Centers**](https://www.tdcommons.org/dpubs_series/8684/) | Technical Disclosure Commons | 2025 |
 
-<sub>The complete publication record is maintained elsewhere; this profile highlights work most relevant to the lab.</sub>
+<sub>The formal research-output record is being consolidated through ORCID; this profile highlights work most relevant to the public systems lab.</sub>
 
 ---
 
 ## Current questions
 
-- What information must survive so AI-assisted understanding can be inspected, revised, and handed forward without flattening its history?
-- How far can deterministic evidence and provenance take us before additional model complexity is actually justified?
-- How should a system represent uncertainty, negative evidence, and unresolved questions without turning them into either noise or false certainty?
+- What information must survive so AI-assisted understanding can be inspected, revised, disputed, and handed forward without flattening its history?
+- How should intent survive changes in models, tools, schemas, interfaces, providers, machines, and custodians?
+- How far can deterministic evidence, provenance, and explicit authority take us before additional model complexity is actually justified?
+- How should systems represent uncertainty, abstention, disagreement, and negative evidence without turning them into either noise or false certainty?
+- When does a custom research instrument earn its maintenance cost, and when should an existing product, library, standard, or protocol simply be reused?
 
 ---
 
@@ -137,6 +165,8 @@ A deliberately small cross-section of the larger publication record, selected fo
 **Negative results count.** A falsified hypothesis can narrow the search space more honestly than a rescued result.
 
 **Provenance travels with the claim.** Important outputs should retain enough lineage to inspect how they came to exist.
+
+**Continuity outranks provider loyalty.** Where work is meant to survive, models, tools, and vendors should remain replaceable whenever practical.
 
 ---
 
