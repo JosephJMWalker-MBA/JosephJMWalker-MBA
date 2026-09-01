@@ -1,108 +1,122 @@
-<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="450" viewBox="0 0 1200 450" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
       <path d="M0 0L8 4L0 8Z" fill="#0969DA"/>
     </marker>
   </defs>
 
-  <rect x="1" y="1" width="1198" height="398" rx="20" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="2"/>
+  <rect x="1" y="1" width="1198" height="448" rx="20" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="2"/>
 
   <!-- Identity -->
-  <line x1="42" y1="36" x2="42" y2="118" stroke="#0969DA" stroke-width="3"/>
-  <text x="62" y="62" fill="#1F2328" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="29" font-weight="650" letter-spacing="3.7">JOSEPH JM WALKER, MBA</text>
-  <text x="62" y="90" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14">Independent research lab for evidence, provenance, interpretation, and human authority</text>
-  <circle cx="990" cy="44" r="4" fill="#0969DA"/>
-  <text x="1003" y="49" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10.5" letter-spacing="1.6">RESEARCH SYSTEMS LAB</text>
+  <line x1="42" y1="34" x2="42" y2="111" stroke="#0969DA" stroke-width="3"/>
+  <text x="62" y="59" fill="#1F2328" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="29" font-weight="650" letter-spacing="3.7">JOSEPH JM WALKER, MBA</text>
+  <text x="62" y="87" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5">Independent research systems for evidence, provenance, continuity, experimental method, and human authority</text>
+  <circle cx="941" cy="42" r="4" fill="#0969DA"/>
+  <text x="954" y="47" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10.2" letter-spacing="1.45">RESEARCH + OPERATING SYSTEMS</text>
 
   <!-- Source families -->
-  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#656D76">
-    <text x="62" y="163">OBSERVATIONS</text>
-    <text x="62" y="193">DOCUMENTS</text>
-    <text x="62" y="223">DATA</text>
-    <text x="62" y="253">EXPERIMENTS</text>
-    <text x="62" y="283">RECORDS</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.5" fill="#656D76">
+    <text x="48" y="166">OBSERVATIONS</text>
+    <text x="48" y="191">DOCUMENTS</text>
+    <text x="48" y="216">DATA</text>
+    <text x="48" y="241">EXPERIMENTS</text>
+    <text x="48" y="266">RECORDS</text>
   </g>
-
-  <g stroke="#8C959F" stroke-width="1.1" opacity="0.58">
-    <path d="M150 159H184C212 159 218 181 244 181H279"/>
-    <path d="M150 189H191C213 189 218 190 244 190H279"/>
-    <path d="M150 219H196C219 219 224 199 248 199H279"/>
-    <path d="M150 249H190C216 249 221 208 250 208H279"/>
-    <path d="M150 279H182C211 279 222 217 252 217H279"/>
+  <g stroke="#8C959F" stroke-width="1" opacity="0.46">
+    <path d="M137 162H171C193 162 200 204 218 204"/>
+    <path d="M137 187H176C195 187 201 204 218 204"/>
+    <path d="M137 212H218"/>
+    <path d="M137 237H176C195 237 201 220 218 220"/>
+    <path d="M137 262H171C193 262 200 220 218 220"/>
   </g>
   <g fill="#0969DA">
-    <circle cx="150" cy="159" r="2.5"/><circle cx="150" cy="189" r="2.5"/><circle cx="150" cy="219" r="2.5"/><circle cx="150" cy="249" r="2.5"/><circle cx="150" cy="279" r="2.5"/>
-    <circle cx="279" cy="181" r="2.2"/><circle cx="279" cy="190" r="2.2"/><circle cx="279" cy="199" r="2.2"/><circle cx="279" cy="208" r="2.2"/><circle cx="279" cy="217" r="2.2"/>
+    <circle cx="137" cy="162" r="2.2"/><circle cx="137" cy="187" r="2.2"/><circle cx="137" cy="212" r="2.2"/><circle cx="137" cy="237" r="2.2"/><circle cx="137" cy="262" r="2.2"/>
   </g>
 
-  <!-- Main epistemic spine -->
-  <rect x="286" y="172" width="170" height="60" rx="13" fill="#F6F8FA" stroke="#0969DA" stroke-width="1.5"/>
-  <rect x="520" y="172" width="170" height="60" rx="13" fill="#F6F8FA" stroke="#0969DA" stroke-width="1.5"/>
-  <rect x="754" y="172" width="160" height="60" rx="13" fill="#F6F8FA" stroke="#0969DA" stroke-width="1.5"/>
+  <!-- Core governed layers -->
+  <rect x="220" y="181" width="145" height="62" rx="13" fill="#F6F8FA" stroke="#0969DA" stroke-width="1.4"/>
+  <rect x="395" y="181" width="145" height="62" rx="13" fill="#F6F8FA" stroke="#0969DA" stroke-width="1.4"/>
+  <rect x="570" y="181" width="145" height="62" rx="13" fill="#F6F8FA" stroke="#0969DA" stroke-width="1.4"/>
+  <rect x="745" y="181" width="145" height="62" rx="13" fill="#F6F8FA" stroke="#0969DA" stroke-width="1.4"/>
 
-  <text x="371" y="209" text-anchor="middle" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="18" letter-spacing="2">EVIDENCE</text>
-  <text x="605" y="209" text-anchor="middle" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="18" letter-spacing="2">INFERENCE</text>
-  <text x="834" y="209" text-anchor="middle" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="17.5" letter-spacing="1.8">AUTHORITY</text>
+  <text x="292.5" y="218" text-anchor="middle" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16.5" letter-spacing="1.7">INTENT</text>
+  <text x="467.5" y="218" text-anchor="middle" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16.5" letter-spacing="1.7">EVIDENCE</text>
+  <text x="642.5" y="218" text-anchor="middle" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16.5" letter-spacing="1.7">INFERENCE</text>
+  <text x="817.5" y="218" text-anchor="middle" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="16.2" letter-spacing="1.55">AUTHORITY</text>
 
-  <path d="M456 202H506" stroke="#0969DA" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <path d="M690 202H740" stroke="#0969DA" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <g fill="#0969DA" opacity="0.62"><circle cx="469" cy="202" r="1.5"/><circle cx="478" cy="202" r="1.5"/><circle cx="487" cy="202" r="1.5"/><circle cx="703" cy="202" r="1.5"/><circle cx="712" cy="202" r="1.5"/><circle cx="721" cy="202" r="1.5"/></g>
-
-  <!-- Motion / lineage traces -->
-  <path d="M184 151C226 141 248 147 282 170" stroke="#0969DA" stroke-width="1" stroke-dasharray="2 8" opacity="0.22"/>
-  <path d="M457 189C482 177 497 177 519 189" stroke="#0969DA" stroke-width="1" stroke-dasharray="2 8" opacity="0.28"/>
-  <path d="M691 189C716 177 731 177 753 189" stroke="#0969DA" stroke-width="1" stroke-dasharray="2 8" opacity="0.28"/>
-  <path d="M914 188C941 175 958 177 978 192" stroke="#0969DA" stroke-width="1" stroke-dasharray="2 8" opacity="0.22"/>
-
-  <!-- Understanding & interpretation -->
-  <rect x="446" y="112" width="326" height="42" rx="12" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.2"/>
-  <circle cx="470" cy="133" r="10" fill="#F6F8FA" stroke="#0969DA"/>
-  <path d="M465 129H470V138H465V129ZM470 129H475V138H470" stroke="#0969DA" stroke-width="1"/>
-  <text x="489" y="129" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10.2" font-weight="700" letter-spacing=".65">UNDERSTANDING &amp; INTERPRETATION</text>
-  <text x="489" y="145" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5">Hermeneia · Pyxis</text>
-  <path d="M609 154V172" stroke="#0969DA" stroke-width="1.2"/>
-  <path d="M609 154C609 163 567 163 567 172" stroke="#0969DA" stroke-width="1" opacity=".45"/>
-  <path d="M609 154C609 163 834 151 834 172" stroke="#0969DA" stroke-width="1" opacity=".35"/>
-  <circle cx="609" cy="162" r="2.3" fill="#0969DA"/>
-
-  <!-- Provenance & review -->
-  <rect x="296" y="268" width="396" height="62" rx="13" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.2"/>
-  <circle cx="326" cy="299" r="13" fill="#F6F8FA" stroke="#0969DA"/>
-  <path d="M326 290L333 293V299C333 304 330 307 326 309C322 307 319 304 319 299V293L326 290Z" stroke="#0969DA" stroke-width="1.1"/>
-  <path d="M323 299L325 301L329 296" stroke="#0969DA" stroke-width="1.1"/>
-  <text x="350" y="293" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10.8" font-weight="700" letter-spacing=".7">PROVENANCE &amp; REVIEW</text>
-  <text x="350" y="312" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9.5">Proofline · Label Lens TTB · Professional Provenance Publisher</text>
-  <path d="M371 232V268" stroke="#0969DA" stroke-width="1.2"/>
-  <path d="M605 232V248C605 258 548 258 548 268" stroke="#0969DA" stroke-width="1" opacity=".55"/>
-  <circle cx="371" cy="250" r="2.3" fill="#0969DA"/>
-
-  <!-- Measurement & experimental method -->
-  <rect x="706" y="268" width="302" height="62" rx="13" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.2"/>
-  <circle cx="735" cy="299" r="13" fill="#F6F8FA" stroke="#0969DA"/>
-  <path d="M732 290H738M734 290V297L730 305H740L736 297V290" stroke="#0969DA" stroke-width="1.1"/>
-  <text x="758" y="293" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.55" font-weight="700" letter-spacing=".48">MEASUREMENT &amp; EXPERIMENTAL METHOD</text>
-  <text x="758" y="312" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5">ChessHeat</text>
-  <path d="M605 232V249C605 259 788 258 788 268" stroke="#0969DA" stroke-width="1" opacity=".48"/>
-  <path d="M834 232V249C834 258 834 258 834 268" stroke="#0969DA" stroke-width="1.2"/>
-  <circle cx="834" cy="250" r="2.3" fill="#0969DA"/>
-
-  <!-- Explicit human governance -->
-  <g opacity="0.22" stroke="#0969DA" fill="none">
-    <circle cx="950" cy="201" r="24"/><circle cx="950" cy="201" r="37"/><circle cx="950" cy="201" r="49" stroke-dasharray="3 7"/>
+  <path d="M365 212H381" stroke="#0969DA" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <path d="M540 212H556" stroke="#0969DA" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <path d="M715 212H731" stroke="#0969DA" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <g fill="#0969DA" opacity="0.65">
+    <circle cx="372" cy="212" r="1.4"/><circle cx="547" cy="212" r="1.4"/><circle cx="722" cy="212" r="1.4"/>
   </g>
-  <path d="M914 202H981" stroke="#0969DA" stroke-width="1.1"/>
-  <circle cx="981" cy="202" r="3" fill="#0969DA"/>
-  <path d="M991 187L1003 192V202C1003 210 999 215 991 219C983 215 979 210 979 202V192L991 187Z" stroke="#0969DA" stroke-width="1.3"/>
-  <circle cx="991" cy="198" r="2.8" stroke="#0969DA"/>
-  <path d="M985 208C987 204 995 204 997 208" stroke="#0969DA"/>
 
-  <rect x="1013" y="176" width="141" height="54" rx="10" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1"/>
-  <text x="1025" y="194" fill="#1F2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="8.8" font-weight="700" letter-spacing=".55">HUMAN JUDGMENT</text>
-  <text x="1025" y="208" fill="#1F2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="8.8" font-weight="700" letter-spacing=".55">&amp; GOVERNANCE</text>
-  <text x="1025" y="221" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9.2">remain explicit</text>
+  <!-- Continuity / understanding -->
+  <rect x="300" y="116" width="510" height="45" rx="12" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.15"/>
+  <circle cx="323" cy="138.5" r="10" fill="#F6F8FA" stroke="#0969DA"/>
+  <path d="M318 134H323V143H318V134ZM323 134H328V143H323" stroke="#0969DA" stroke-width="1"/>
+  <text x="343" y="134.5" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10.6" font-weight="700" letter-spacing=".62">CONTINUITY &amp; UNDERSTANDING</text>
+  <text x="343" y="150" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.2">Hermeneia · Continuity Node · Memory Lab · TRACE · Pyxis</text>
 
-  <!-- Footer -->
-  <line x1="42" y1="356" x2="1158" y2="356" stroke="#D0D7DE"/>
-  <text x="42" y="377" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.5" letter-spacing="1.25">EVIDENCE FIRST · PROVENANCE ALWAYS · HUMAN AUTHORITY EXPLICIT</text>
-  <text x="1158" y="377" text-anchor="end" fill="#656D76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.5" letter-spacing="1.1">CANTON · OH · USA</text>
+  <path d="M407 161C407 171 292 169 292 181" stroke="#0969DA" stroke-width="1" opacity="0.46"/>
+  <path d="M515 161V181" stroke="#0969DA" stroke-width="1.15"/>
+  <path d="M642 161V181" stroke="#0969DA" stroke-width="1.15"/>
+  <path d="M750 161C750 171 818 169 818 181" stroke="#0969DA" stroke-width="1" opacity="0.46"/>
+  <g fill="#0969DA">
+    <circle cx="515" cy="170" r="2.1"/><circle cx="642" cy="170" r="2.1"/>
+  </g>
+
+  <!-- Human governance -->
+  <g opacity="0.24" stroke="#0969DA" fill="none">
+    <circle cx="934" cy="212" r="22"/><circle cx="934" cy="212" r="34"/><circle cx="934" cy="212" r="46" stroke-dasharray="3 7"/>
+  </g>
+  <path d="M890 212H964" stroke="#0969DA" stroke-width="1.1"/>
+  <circle cx="964" cy="212" r="2.8" fill="#0969DA"/>
+  <path d="M977 194L989 199V210C989 219 985 225 977 229C969 225 965 219 965 210V199L977 194Z" stroke="#0969DA" stroke-width="1.25"/>
+  <circle cx="977" cy="205" r="2.8" stroke="#0969DA"/>
+  <path d="M971 216C973 212 981 212 983 216" stroke="#0969DA"/>
+  <rect x="1000" y="185" width="154" height="55" rx="10" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1"/>
+  <text x="1012" y="202" fill="#1F2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="8.5" font-weight="700" letter-spacing=".48">HUMAN JUDGMENT</text>
+  <text x="1012" y="216" fill="#1F2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="8.5" font-weight="700" letter-spacing=".48">&amp; GOVERNANCE</text>
+  <text x="1012" y="230" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9">remain explicit</text>
+
+  <!-- Research families -->
+  <rect x="220" y="284" width="285" height="65" rx="13" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.1"/>
+  <circle cx="247" cy="316.5" r="12" fill="#F6F8FA" stroke="#0969DA"/>
+  <path d="M247 308L254 311V317C254 322 251 325 247 327C243 325 240 322 240 317V311L247 308Z" stroke="#0969DA" stroke-width="1"/>
+  <path d="M244 317L246 319L250 314" stroke="#0969DA" stroke-width="1"/>
+  <text x="268" y="311.5" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.8" font-weight="700" letter-spacing=".52">PROVENANCE &amp; GOVERNED REVIEW</text>
+  <text x="268" y="329.5" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9.7">Proofline · Label Lens TTB · Provenance Publisher</text>
+
+  <rect x="525" y="284" width="285" height="65" rx="13" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.1"/>
+  <circle cx="552" cy="316.5" r="12" fill="#F6F8FA" stroke="#0969DA"/>
+  <path d="M549 307H555M551 307V314L547 323H557L553 314V307" stroke="#0969DA" stroke-width="1"/>
+  <text x="573" y="311.5" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.8" font-weight="700" letter-spacing=".52">MEASUREMENT &amp; EXPERIMENTAL METHOD</text>
+  <text x="573" y="329.5" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10">CTRT · ChessHeat</text>
+
+  <rect x="830" y="284" width="285" height="65" rx="13" fill="#FFFFFF" stroke="#0969DA" stroke-width="1.1"/>
+  <circle cx="857" cy="316.5" r="12" fill="#F6F8FA" stroke="#0969DA"/>
+  <path d="M851 311H863M851 316.5H863M851 322H863M857 305V328" stroke="#0969DA" stroke-width="1"/>
+  <text x="878" y="311.5" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.8" font-weight="700" letter-spacing=".52">RULES, STRATEGY &amp; MEASURABLE AI</text>
+  <text x="878" y="329.5" fill="#656D76" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10">Crownline</text>
+
+  <!-- Family links -->
+  <path d="M370 243V265C370 275 362 275 362 284" stroke="#0969DA" stroke-width="1" opacity="0.46"/>
+  <path d="M468 243V264C468 275 668 271 668 284" stroke="#0969DA" stroke-width="1" opacity="0.46"/>
+  <path d="M643 243V263C643 273 668 273 668 284" stroke="#0969DA" stroke-width="1.1"/>
+  <path d="M818 243V261C818 273 973 272 973 284" stroke="#0969DA" stroke-width="1" opacity="0.46"/>
+  <circle cx="643" cy="257" r="2.1" fill="#0969DA"/>
+
+  <!-- Operating principle rail -->
+  <line x1="42" y1="383" x2="1158" y2="383" stroke="#D0D7DE"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.2" letter-spacing="1.05">
+    <text x="42" y="406" fill="#0969DA">PRESERVE SOURCE</text>
+    <text x="230" y="406" fill="#656D76">SEPARATE CLAIM TYPES</text>
+    <text x="476" y="406" fill="#656D76">PRESERVE NEGATIVE RESULTS</text>
+    <text x="767" y="406" fill="#656D76">REBUILD DERIVED STATE</text>
+    <text x="1015" y="406" fill="#656D76">KEEP AUTHORITY EXPLICIT</text>
+  </g>
+
+  <text x="42" y="430" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.3" letter-spacing="1.15">INTENT · EVIDENCE · INFERENCE · AUTHORITY</text>
+  <text x="1158" y="430" text-anchor="end" fill="#656D76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.3" letter-spacing="1.05">CANTON · OH · USA</text>
 </svg>
