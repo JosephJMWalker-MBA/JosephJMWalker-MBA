@@ -6,9 +6,9 @@
 <text x="54" y="60" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" letter-spacing="2">PUBLIC LAB TELEMETRY · 12 WEEKS</text>
 <text x="54" y="98" fill="#1f2328" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="28" font-weight="650">Research activity</text>
 <text x="54" y="125" fill="#656d76" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14">Commit volume is activity, not evidence of quality, importance, or validation.</text>
-<text x="1066" y="60" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">UPDATED 2026-09-01</text>
+<text x="1066" y="60" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">UPDATED 2026-09-02</text>
 <text x="82" y="145" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">COMMITS / WEEK</text>
-<text x="704" y="145" text-anchor="end" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">2857 TOTAL</text>
+<text x="704" y="145" text-anchor="end" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">2894 TOTAL</text>
 <line x1="82" y1="392.0" x2="704" y2="392.0" stroke="#d0d7de" stroke-width="1"/>
 <text x="72" y="395.0" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">0</text>
 <line x1="82" y1="316.7" x2="704" y2="316.7" stroke="#d0d7de" stroke-width="1"/>
@@ -67,45 +67,45 @@
 <text x="577.3" y="176.0" text-anchor="middle" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" font-weight="650">834</text>
 </g>
 <text x="577.3" y="416" text-anchor="middle" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">8/17</text>
-<g aria-label="Week of 2026-08-24: 657 commits"><title>Week of 2026-08-24: 657 commits</title>
-<rect x="608.7" y="227.0" width="42.7" height="165.0" rx="3" fill="#0969da" opacity="1"/>
-<text x="630.0" y="220.0" text-anchor="middle" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" font-weight="650">657</text>
+<g aria-label="Week of 2026-08-24: 658 commits"><title>Week of 2026-08-24: 658 commits</title>
+<rect x="608.7" y="226.8" width="42.7" height="165.2" rx="3" fill="#0969da" opacity="1"/>
+<text x="630.0" y="219.8" text-anchor="middle" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" font-weight="650">658</text>
 </g>
 <text x="630.0" y="416" text-anchor="middle" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">8/24</text>
-<g aria-label="Week of 2026-08-31: 13 commits (current week partial)"><title>Week of 2026-08-31: 13 commits (current week partial)</title>
-<rect x="661.3" y="388.7" width="42.7" height="3.3" rx="3" fill="#0969da" opacity="0.65"/>
-<text x="682.7" y="381.7" text-anchor="middle" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" font-weight="650">13*</text>
+<g aria-label="Week of 2026-08-31: 49 commits (current week partial)"><title>Week of 2026-08-31: 49 commits (current week partial)</title>
+<rect x="661.3" y="379.7" width="42.7" height="12.3" rx="3" fill="#0969da" opacity="0.65"/>
+<text x="682.7" y="372.7" text-anchor="middle" fill="#1f2328" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" font-weight="650">49*</text>
 </g>
 <text x="682.7" y="416" text-anchor="middle" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">8/31</text>
 <line x1="730" y1="142" x2="730" y2="420" stroke="#d0d7de"/>
 <text x="758" y="136" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">ATTENTION ALLOCATION</text>
-<g aria-label="Hermeneia: 271 commits, 9.5% of selected 12-week activity"><title>Hermeneia: 271 commits, 9.5% of selected 12-week activity</title>
+<g aria-label="Hermeneia: 280 commits, 9.7% of selected 12-week activity"><title>Hermeneia: 280 commits, 9.7% of selected 12-week activity</title>
 <text x="758" y="168" fill="#1f2328" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">Hermeneia</text>
-<text x="1064" y="168" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">271</text>
+<text x="1064" y="168" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">280</text>
 <rect x="758" y="177" width="306" height="5" rx="2.5" fill="#f6f8fa"/>
-<rect x="758" y="177" width="67.4" height="5" rx="2.5" fill="#0969da"/>
+<rect x="758" y="177" width="69.0" height="5" rx="2.5" fill="#0969da"/>
 </g>
-<g aria-label="Proofline: 638 commits, 22.3% of selected 12-week activity"><title>Proofline: 638 commits, 22.3% of selected 12-week activity</title>
+<g aria-label="Proofline: 638 commits, 22.0% of selected 12-week activity"><title>Proofline: 638 commits, 22.0% of selected 12-week activity</title>
 <text x="758" y="211" fill="#1f2328" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">Proofline</text>
 <text x="1064" y="211" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">638</text>
 <rect x="758" y="220" width="306" height="5" rx="2.5" fill="#f6f8fa"/>
-<rect x="758" y="220" width="158.7" height="5" rx="2.5" fill="#0969da"/>
+<rect x="758" y="220" width="157.2" height="5" rx="2.5" fill="#0969da"/>
 </g>
-<g aria-label="ChessHeat: 219 commits, 7.7% of selected 12-week activity"><title>ChessHeat: 219 commits, 7.7% of selected 12-week activity</title>
+<g aria-label="ChessHeat: 235 commits, 8.1% of selected 12-week activity"><title>ChessHeat: 235 commits, 8.1% of selected 12-week activity</title>
 <text x="758" y="254" fill="#1f2328" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">ChessHeat</text>
-<text x="1064" y="254" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">219</text>
+<text x="1064" y="254" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">235</text>
 <rect x="758" y="263" width="306" height="5" rx="2.5" fill="#f6f8fa"/>
-<rect x="758" y="263" width="54.5" height="5" rx="2.5" fill="#0969da"/>
+<rect x="758" y="263" width="57.9" height="5" rx="2.5" fill="#0969da"/>
 </g>
-<g aria-label="label-lens-ttb: 312 commits, 10.9% of selected 12-week activity"><title>label-lens-ttb: 312 commits, 10.9% of selected 12-week activity</title>
+<g aria-label="label-lens-ttb: 312 commits, 10.8% of selected 12-week activity"><title>label-lens-ttb: 312 commits, 10.8% of selected 12-week activity</title>
 <text x="758" y="297" fill="#1f2328" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">label-lens-ttb</text>
 <text x="1064" y="297" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">312</text>
 <rect x="758" y="306" width="306" height="5" rx="2.5" fill="#f6f8fa"/>
-<rect x="758" y="306" width="77.6" height="5" rx="2.5" fill="#0969da"/>
+<rect x="758" y="306" width="76.9" height="5" rx="2.5" fill="#0969da"/>
 </g>
-<g aria-label="pyxis: 1230 commits, 43.1% of selected 12-week activity"><title>pyxis: 1230 commits, 43.1% of selected 12-week activity</title>
+<g aria-label="pyxis: 1242 commits, 42.9% of selected 12-week activity"><title>pyxis: 1242 commits, 42.9% of selected 12-week activity</title>
 <text x="758" y="340" fill="#1f2328" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">pyxis</text>
-<text x="1064" y="340" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">1230</text>
+<text x="1064" y="340" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">1242</text>
 <rect x="758" y="349" width="306" height="5" rx="2.5" fill="#f6f8fa"/>
 <rect x="758" y="349" width="306.0" height="5" rx="2.5" fill="#0969da"/>
 </g>
@@ -113,10 +113,10 @@
 <text x="758" y="383" fill="#1f2328" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13">professional-provenance-publisher</text>
 <text x="1064" y="383" text-anchor="end" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">187</text>
 <rect x="758" y="392" width="306" height="5" rx="2.5" fill="#f6f8fa"/>
-<rect x="758" y="392" width="46.5" height="5" rx="2.5" fill="#0969da"/>
+<rect x="758" y="392" width="46.1" height="5" rx="2.5" fill="#0969da"/>
 </g>
 <text x="54" y="474" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="1">12W COMMITS</text>
-<text x="54" y="504" fill="#1f2328" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22" font-weight="650">2857</text>
+<text x="54" y="504" fill="#1f2328" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22" font-weight="650">2894</text>
 <text x="274" y="474" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="1">ACTIVE SYSTEMS</text>
 <text x="274" y="504" fill="#1f2328" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22" font-weight="650">6/6</text>
 <text x="494" y="474" fill="#656d76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="1">DATA SOURCE</text>

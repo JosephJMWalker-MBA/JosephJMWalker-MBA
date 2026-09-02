@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T16:44:21+00:00",
+  "generated_at": "2026-09-02T16:40:11+00:00",
   "scope": "selected public repositories only",
   "interpretation": "commit volume measures activity, not quality, importance, or validation strength",
   "weeks": 12,
@@ -43,8 +43,8 @@
     8,
     762,
     834,
-    657,
-    13
+    658,
+    49
   ],
   "repos": [
     {
@@ -62,10 +62,10 @@
         44,
         25,
         56,
-        13
+        22
       ],
-      "total": 271,
-      "latest_commit": "2026-09-01T03:48:05Z"
+      "total": 280,
+      "latest_commit": "2026-09-01T19:55:44Z"
     },
     {
       "repo": "Proofline",
@@ -102,10 +102,10 @@
         130,
         82,
         7,
-        0
+        16
       ],
-      "total": 219,
-      "latest_commit": "2026-08-26T23:14:10Z"
+      "total": 235,
+      "latest_commit": "2026-09-02T16:21:38Z"
     },
     {
       "repo": "label-lens-ttb",
@@ -141,11 +141,11 @@
         0,
         566,
         268,
-        396,
-        0
+        397,
+        11
       ],
-      "total": 1230,
-      "latest_commit": "2026-08-29T22:22:21Z"
+      "total": 1242,
+      "latest_commit": "2026-09-01T21:09:23Z"
     },
     {
       "repo": "professional-provenance-publisher",
