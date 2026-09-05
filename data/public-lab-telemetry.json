@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T16:27:31+00:00",
+  "generated_at": "2026-09-05T15:19:18+00:00",
   "scope": "selected public repositories only",
   "interpretation": "commit volume measures activity, not quality, importance, or validation strength",
   "weeks": 12,
@@ -44,7 +44,7 @@
     762,
     834,
     658,
-    81
+    197
   ],
   "repos": [
     {
@@ -142,10 +142,10 @@
         566,
         268,
         397,
-        26
+        142
       ],
-      "total": 1257,
-      "latest_commit": "2026-09-04T05:14:01Z"
+      "total": 1373,
+      "latest_commit": "2026-09-05T03:52:32Z"
     },
     {
       "repo": "professional-provenance-publisher",
