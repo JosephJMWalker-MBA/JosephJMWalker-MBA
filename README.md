@@ -16,7 +16,7 @@ Many projects share reliability principles — preserved source, explicit author
 
 Do not infer a project from its name, one component, an older prototype, or recurring architectural vocabulary. The orientation map records canonical identities, critical `IS / IS NOT` boundaries, lineage relationships, and a rule for resolving uncertainty: **orient here first, then decide from the canonical project source.**
 
-The broader portfolio also includes private applied systems, commercial infrastructure, creative-production tools, protocols, and preservation work. Public research repositories are highlighted here because their claims and evidence can be inspected directly.
+The broader portfolio also includes private applied systems, commercial infrastructure, creative-production tools, protocols, and preservation work. Public research and working repositories are highlighted here because their claims, evidence, and boundaries can be inspected directly.
 
 ---
 
@@ -27,13 +27,20 @@ The broader portfolio also includes private applied systems, commercial infrastr
 | [**Hermeneia**](https://github.com/JosephJMWalker-MBA/Hermeneia) | How can understanding evolve without losing provenance or human authority? | `VALIDATION` |
 | [**CTRT**](https://github.com/JosephJMWalker-MBA/CTRT) | Can interchangeable content-analysis instruments be evaluated without collapsing evidence, uncertainty, disagreement, and authority into one score? | `PHASE 1B · EMPIRICAL EVALUATION` |
 | [**Proofline**](https://github.com/JosephJMWalker-MBA/Proofline) | How can public records become reproducible investigative evidence without automating accusation? | `FIELD VALIDATION` |
-| [**ChessHeat**](https://github.com/JosephJMWalker-MBA/ChessHeat) | Which spatial claims about chess consequence can actually be earned by measurement? | `PREREGISTRATION / MEASUREMENT` |
+| [**ChessHeat**](https://github.com/JosephJMWalker-MBA/ChessHeat) | Which spatial claims about chess consequence can actually be earned by measurement? | `PREREGISTRATION DRAFT · EXECUTION NOT AUTHORIZED` |
 | [**Crownline**](https://github.com/JosephJMWalker-MBA/crownline) | Can an original strategy game evolve through measured rules design, preserved negative results, and reproducible AI benchmarking? | `V1.1 CANDIDATE PLAYTEST` |
-| [**Memory Lab**](https://github.com/JosephJMWalker-MBA/memory-lab) | How can semantic memory remain provenance-aware when canonical source, retrieval indexes, and derived memory evolve independently? | `RESEARCH HARNESS` |
+| [**Memory Lab**](https://github.com/JosephJMWalker-MBA/memory-lab) | Which epistemic-continuity obligations must a memory system preserve, and can established substrates satisfy them without a custom runtime? | `CONFORMANCE HARNESS` |
+| [**Artificial Cognitive Pathology**](https://github.com/JosephJMWalker-MBA/artificial-cognitive-pathology) | Can persistent AI failure modes be operationalized into useful higher-order classes without treating human clinical analogy as evidence? | `PROPOSED FRAMEWORK · INITIAL HYPOTHESES` |
 | [**TRACE**](https://github.com/JosephJMWalker-MBA/TRACE) | What must survive so consequential human + agent work remains reproducible across people, models, sessions, tools, and hardware? | `EXPERIMENTAL / PRE-SPECIFICATION` |
 | [**Continuity Node**](https://github.com/JosephJMWalker-MBA/Continuity-Node) | Can user-owned longitudinal memory preserve source, interpretation, dissent, and rebuildability across changing inference engines? | `REFERENCE IMPLEMENTATION` |
 | [**Label Lens TTB**](https://github.com/JosephJMWalker-MBA/label-lens-ttb) | How can regulatory review be assisted without pretending software has regulatory authority? | `DEPLOYED PROTOTYPE` |
 | [**Pyxis**](https://github.com/JosephJMWalker-MBA/pyxis) | Can research and software transformations remain inspectable from human intent through runtime evidence? | `ACTIVE DEVELOPMENT` |
+
+### Public coordination
+
+[**Decision Point Initiative**](https://decisionpointinitiative.com/) is a separate public coordination effort for consequential choices where evidence, alternatives, tools, experiments, and serious disagreement can still improve the decision environment. Its inspectable working layer is the [**Decision Point Workshop**](https://github.com/JosephJMWalker-MBA/Decision-Point-Workshop).
+
+The current workshop, **DP-001**, develops and pressure-tests a proposed **National Competition for Governable AI Architectures** through bounded work packets, reproduction, challenge, falsification, and synthesis rather than requiring every contributor to propose a complete architecture.
 
 ---
 
@@ -64,7 +71,7 @@ That separation matters: a research artifact, a defensive publication, a working
 ## Research programs
 
 **Understanding, continuity & human authority**  
-Systems for preserving how understanding, memory, and intent develop rather than retaining only a final answer or current model state.  
+Systems and conformance research for preserving how understanding, memory, and intent develop rather than retaining only a final answer or current model state.  
 → [Hermeneia](https://github.com/JosephJMWalker-MBA/Hermeneia) · [Continuity Node](https://github.com/JosephJMWalker-MBA/Continuity-Node) · [Memory Lab](https://github.com/JosephJMWalker-MBA/memory-lab) · [TRACE](https://github.com/JosephJMWalker-MBA/TRACE) · [Pyxis](https://github.com/JosephJMWalker-MBA/pyxis)
 
 **Evidence, provenance & governed review**  
@@ -74,6 +81,10 @@ Infrastructure that keeps source records, derived observations, machine assistan
 **Measurement & experimental method**  
 Research where attractive explanations are allowed to fail, evaluation gates are stated before promotion, disagreement remains visible, and negative results stay in the record.  
 → [CTRT](https://github.com/JosephJMWalker-MBA/CTRT) · [ChessHeat](https://github.com/JosephJMWalker-MBA/ChessHeat)
+
+**Artificial-system failure & recovery**  
+Research into persistent, cascading, latent, or heritable artificial-system failures using operational definitions, controlled experiments, replication, recovery tests, and negative results rather than clinical analogy as evidence.  
+→ [Artificial Cognitive Pathology](https://github.com/JosephJMWalker-MBA/artificial-cognitive-pathology)
 
 **Rules, strategy & measurable AI**  
 Original game design used as a controlled environment for rules research, human playtesting, AI benchmarking, and hypothesis rejection.  
@@ -123,7 +134,7 @@ Concrete examples:
 - [**Pyxis**](https://github.com/JosephJMWalker-MBA/pyxis) carries human intent through canonical state, compilation, runtime evidence, persistence, verification, CLI/UI, and portable output.
 - [**CTRT**](https://github.com/JosephJMWalker-MBA/CTRT) carries frozen research plans through candidate eligibility, canonical artifacts, governed execution, append-only storage, human-reference collection, and preregistered evaluation.
 - [**Crownline**](https://github.com/JosephJMWalker-MBA/crownline) keeps authoritative game rules and AI policy server-side while exposing a playable WebGL client, reproducible benchmarks, and preserved research conclusions.
-- [**Memory Lab**](https://github.com/JosephJMWalker-MBA/memory-lab) separates immutable source snapshots, rebuildable lexical/vector indexes, and provenance-bearing derived memory while validating incremental mutation and rollback behavior.
+- [**Memory Lab**](https://github.com/JosephJMWalker-MBA/memory-lab) now uses executable fixtures, thin adapters, and conformance checks to test whether memory substrates preserve epistemic-continuity obligations; its earlier source/index/derived-memory implementation remains a validated engineering track rather than the canonical project identity.
 
 ---
 
