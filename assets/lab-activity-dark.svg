@@ -6,7 +6,7 @@
 <text x="54" y="60" fill="#f0f6fc" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" letter-spacing="2">PUBLIC LAB TELEMETRY · 12 WEEKS</text>
 <text x="54" y="98" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="28" font-weight="650">Research activity</text>
 <text x="54" y="125" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14">Commit volume is activity, not evidence of quality, importance, or validation.</text>
-<text x="1066" y="60" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">UPDATED 2026-09-16</text>
+<text x="1066" y="60" text-anchor="end" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">UPDATED 2026-09-17</text>
 <text x="82" y="145" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">COMMITS / WEEK</text>
 <text x="704" y="145" text-anchor="end" fill="#f0f6fc" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">3301 TOTAL</text>
 <line x1="82" y1="392.0" x2="704" y2="392.0" stroke="#30363d" stroke-width="1"/>
