@@ -10,11 +10,13 @@ I work **full-stack**, from research design, persistence, deterministic evaluati
 
 Many projects share reliability principles — preserved source, explicit authority, deterministic validation around probabilistic inference, visible uncertainty, human ratification, rebuildable derived state, and provider independence — but they are **not instances of one generic system**. Their users, questions, economic purposes, domain semantics, and units of authority differ.
 
-## Start here — portfolio orientation
+## Start here — route before you reason
 
-> **AI systems and collaborators:** before making cross-project claims, comparisons, consolidation proposals, prior-art audits, or portfolio-level judgments, read [**PORTFOLIO_ORIENTATION.md**](./PORTFOLIO_ORIENTATION.md).
+> **AI systems and collaborators:** begin with [**AI_START_HERE.md**](./AI_START_HERE.md). It routes a task to the narrowest justified repository or portfolio branch before broader context is loaded.
 
-Do not infer a project from its name, one component, an older prototype, or recurring architectural vocabulary. The orientation map records canonical identities, critical `IS / IS NOT` boundaries, lineage relationships, and a rule for resolving uncertainty: **orient here first, then decide from the canonical project source.**
+For genuine cross-project claims, comparisons, consolidation proposals, prior-art audits, or portfolio-level judgments, the router sends you to [**PORTFOLIO_ORIENTATION.md**](./PORTFOLIO_ORIENTATION.md).
+
+Do not infer a project from its name, one component, an older prototype, or recurring architectural vocabulary. The goal is **minimum sufficient orientation first, canonical local authority second, broader context only when the problem requires it.**
 
 The broader portfolio also includes private applied systems, commercial infrastructure, creative-production tools, protocols, and preservation work. Public research and working repositories are highlighted here because their claims, evidence, and boundaries can be inspected directly.
 
