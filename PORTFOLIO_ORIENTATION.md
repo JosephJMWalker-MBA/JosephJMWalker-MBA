@@ -4,6 +4,14 @@
 
 The repositories in this account are not one generic system repeated across many domains. They include research architectures, executable research harnesses, commercial products, internal operating systems, creative tools, games, protocols, historical prototypes, and preservation artifacts.
 
+## AI discovery adapters
+
+This repository includes thin provider-specific instruction files so different AI systems are more likely to find the same canonical orientation layer automatically: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, and `.github/copilot-instructions.md`.
+
+Those files are **discovery shims, not independent authorities**. They point back here and to repository-local canonical sources. They should remain short enough to avoid duplicating or drifting from the portfolio map.
+
+The provider-neutral protocol behind this pattern lives in the [TRACE](https://github.com/JosephJMWalker-MBA/TRACE) repository. TRACE treats accurate cross-provider onboarding and durable handoff as part of reproducibility rather than as model-specific prompt customization.
+
 Many of them share engineering principles — provenance, explicit authority, deterministic validation around probabilistic inference, preserved uncertainty, append-oriented history, human ratification, and provider independence — but **shared principles do not make the projects interchangeable or redundant**.
 
 **Maintaining this map:** see [**PORTFOLIO_ORIENTATION_MAINTENANCE.md**](./PORTFOLIO_ORIENTATION_MAINTENANCE.md) for the methodology used to add, revise, reclassify, or retire entries without losing authority or lineage.
