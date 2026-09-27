@@ -410,15 +410,21 @@ The entries below are orientation summaries, not substitutes for each repository
 
 ## MicMap
 
-**Identity:** a live open-mic opportunity-state system intended to answer where a comedian can actually obtain stage time now, with mapped, observed, and confirmed states kept distinct.
+**Identity:** a comedy-first live public-event and small-stage opportunity-state system intended to answer where a performer can actually obtain stage time now, with mapped, observed, and confirmed states kept distinct. Its public-event model can support intentionally mixed creative bills and collaboration roles across comedy, music, live media, and production.
 
-**Do not flatten into:** a static open-mic directory or another social network.
+**Do not flatten into:** a static open-mic directory, a generic social network, or a "people nearby" / passive location-tracking product. The safety boundary is **event visibility, not attendee visibility**.
 
 ## Hecklers & Trolls
 
 **Identity:** an asynchronous comedy-room concept built around premises, riffs, heckles, comebacks, labeled bots/parody identities, and comedy-contextual social interaction.
 
 **Do not flatten into:** Threads with comedy branding, influencer growth, or permission for unbounded harassment.
+
+## Collab
+
+**Identity:** an active music-first governed collaboration-and-opportunity system that learns from completed creative work, scoped agreements, rights/credit/provenance, and verified outcomes to improve future professional matching. Its current implementation focus is a bounded producer-collaboration Stage 1 proof.
+
+**Do not flatten into:** a generic creator social network, a universal compatibility score, a dating app, MicMap, MusicReviewRadio, or Modern Movie Crew. Cross-project value should move through explicit contracts: MicMap can supply public event/opportunity truth, Modern Movie Crew can govern production/capture, and MusicReviewRadio can provide review/discovery workflows without repository or data-model collapse.
 
 ## MusicReviewRadio
 
