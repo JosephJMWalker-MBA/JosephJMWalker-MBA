@@ -1,0 +1,139 @@
+{
+  "version": "0.1",
+  "status": "navigation-aid-not-authority",
+  "purpose": "Reduce task-irrelevant orientation variance across AI systems entering the JosephJMWalker-MBA GitHub portfolio.",
+  "invariants": [
+    "A named repository routes to its own canonical source first.",
+    "Portfolio summaries do not outrank repository-local authority.",
+    "Shared vocabulary does not imply shared ontology, runtime, or merger.",
+    "Broaden context only when the task requires it.",
+    "If orientation is insufficient, report insufficient orientation rather than guessing."
+  ],
+  "routes": [
+    {
+      "id": "named-repository",
+      "when": "A repository is explicitly named.",
+      "action": [
+        "read repository README",
+        "follow local authority order",
+        "load task-relevant files only"
+      ]
+    },
+    {
+      "id": "cross-project",
+      "when": "Comparison, consolidation, duplication, prior art, or portfolio-level strategy.",
+      "action": [
+        "read PORTFOLIO_ORIENTATION.md",
+        "read canonical source of every named project"
+      ]
+    },
+    {
+      "id": "understanding-continuity",
+      "when": "Understanding, interpretation, memory, intent, continuity, handoff, provider/session replacement.",
+      "candidates": [
+        "Hermeneia",
+        "Continuity-Node",
+        "memory-lab",
+        "Telos",
+        "TRACE",
+        "pyxis"
+      ]
+    },
+    {
+      "id": "evidence-governed-review",
+      "when": "Evidence, provenance, public records, regulated review, professional evidence, agreements, physical-asset evidence.",
+      "candidates": [
+        "Proofline",
+        "label-lens-ttb",
+        "professional-provenance-publisher",
+        "Tekmerion",
+        "aerial-inspections-ops"
+      ]
+    },
+    {
+      "id": "measurement-experiment",
+      "when": "Measurement, preregistration, falsification, benchmarking, controlled comparison, model/system evaluation.",
+      "candidates": [
+        "CTRT",
+        "ChessHeat",
+        "crownline",
+        "artificial-cognitive-pathology"
+      ]
+    },
+    {
+      "id": "ai-architecture-governance",
+      "when": "Multi-model architecture, interoperability, coordination, provider independence, cross-system governance, agentic collaboration.",
+      "candidates": [
+        "Governed-Intelligence-Ecology",
+        "MASI",
+        "MASI-Bus",
+        "TunedForest",
+        "TRACE"
+      ]
+    },
+    {
+      "id": "applied-business",
+      "when": "Consulting, process redesign, business operations, commerce, enterprise systems, applied analytics.",
+      "candidates": [
+        "Masters-Consulting-Group",
+        "governed-commercial-intelligence",
+        "SODATERU.shop",
+        "Aerial-Inspections",
+        "aerial-inspections-ops",
+        "yurrmom.com",
+        "capitalvoting"
+      ]
+    },
+    {
+      "id": "creative-production",
+      "when": "Film, publishing, performance, music, live events, creative collaboration, production continuity.",
+      "candidates": [
+        "modernmoviecrew",
+        "performance-manuscript",
+        "publication-compositor",
+        "Big-Joke",
+        "MicMap",
+        "Collab",
+        "MusicReviewRadio",
+        "Hecklers-and-Trolls"
+      ]
+    },
+    {
+      "id": "hardware-field-resilience",
+      "when": "Hardware continuity, bounded missions, field execution, physical systems, resilience, device lifecycle.",
+      "candidates": [
+        "DRAGON-SCALE",
+        "Hardware-Continuity",
+        "Lunar-Base-Resilience",
+        "CacheWarden"
+      ]
+    },
+    {
+      "id": "public-coordination",
+      "when": "Public challenge, bounded contribution, reproduction, consequential decision environments, institutional coordination.",
+      "candidates": [
+        "Decision-Point-Initiative",
+        "Decision-Point-Workshop"
+      ]
+    },
+    {
+      "id": "current-state",
+      "when": "Current status, next work, operational state.",
+      "action": [
+        "use DASHBOARD.md only as navigation/telemetry",
+        "read repository-local status/roadmap/next-work",
+        "inspect current issues/PRs when relevant"
+      ]
+    },
+    {
+      "id": "fallback",
+      "when": "No route fits or more than one branch remains plausible.",
+      "action": [
+        "read only candidate identity entries in PORTFOLIO_ORIENTATION.md",
+        "narrow candidates",
+        "avoid full portfolio sweep unless necessary"
+      ]
+    }
+  ],
+  "experiment_reference": "JosephJMWalker-MBA/TRACE experiments/orientation-variance/PREREGISTRATION_DRAFT.md"
+}
