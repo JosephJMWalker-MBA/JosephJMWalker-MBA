@@ -1,5 +1,7 @@
 # Portfolio onboarding for Gemini
 
+@./AI_START_HERE.md
+
 @./PORTFOLIO_ORIENTATION.md
 
 @./README.md
