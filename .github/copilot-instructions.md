@@ -1,4 +1,4 @@
-Before making cross-project claims about this GitHub portfolio, use [PORTFOLIO_ORIENTATION.md](../PORTFOLIO_ORIENTATION.md) as the semantic orientation layer and [README.md](../README.md) as the public lab entry point.
+Start with [AI_START_HERE.md](../AI_START_HERE.md) to route the task to the narrowest justified repository or branch. For cross-project work, use [PORTFOLIO_ORIENTATION.md](../PORTFOLIO_ORIENTATION.md) as the semantic orientation layer and [README.md](../README.md) as the public lab entry point.
 
 Then inspect the canonical README or authority file of every named repository before making local judgments.
 
