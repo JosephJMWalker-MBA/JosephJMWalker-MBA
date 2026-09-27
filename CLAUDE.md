@@ -1,6 +1,8 @@
 # Portfolio onboarding for Claude Code
 
-Canonical portfolio orientation: @PORTFOLIO_ORIENTATION.md
+Task router: @AI_START_HERE.md
+
+Canonical portfolio orientation for cross-project work: @PORTFOLIO_ORIENTATION.md
 
 Use @README.md for the public lab identity.
 
