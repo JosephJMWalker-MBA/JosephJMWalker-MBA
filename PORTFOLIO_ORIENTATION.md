@@ -36,8 +36,11 @@ prefer deterministic validation around probabilistic inference
 preserve revisions instead of silently overwriting them
 allow abstention / unknown
 keep human ratification visible
+distinguish proposal, selection, authorization, execution, and observed outcome
 make derived state rebuildable where practical
 keep providers replaceable where they should be
+let reality feedback correct future judgment without rewriting past evidence
+reuse mature machinery when it preserves the required invariants
 ```
 
 This is best understood as an **engineering and epistemic philosophy**, not proof that the projects are instances of one hidden platform.
@@ -45,27 +48,154 @@ This is best understood as an **engineering and epistemic philosophy**, not proo
 For example, different projects apply these principles to very different objects:
 
 ```text
-Hermeneia              understanding
-Proofline              public records
-ChessHeat              experimental measurements
-GCI                    commercial state
-Publication Compositor authored content
-Performance Manuscript performance semantics
-Label Lens TTB         regulatory review evidence
-Tekmerion              agreements and performance records
-Continuity Node        memory and interpretation
-DRAGON SCALE           missions and mission evidence
-Modern Movie Crew      creative production decisions
-Aerial Inspections     physical-asset evidence and operations
+Governed Intelligence Ecology  cross-system continuity and governance responsibilities
+Hermeneia                     understanding and interpretive continuity
+Proofline                     public records
+ChessHeat                     experimental measurements
+GCI                           commercial state
+Publication Compositor        authored content
+Performance Manuscript        performance semantics
+Label Lens TTB                regulatory review evidence
+Tekmerion                     agreements and performance records
+Continuity Node               memory and interpretation
+DRAGON SCALE                  missions and mission evidence
+Modern Movie Crew             creative production decisions
+Aerial Inspections            physical-asset evidence and operations
+Masters Consulting Group      institutional capability and applied architecture
+Decision Point Initiative     consequential decision environments and public coordination
 ```
 
 Do **not** propose a shared framework merely because two repositories contain words such as `provenance`, `canonical`, `append-only`, `authority`, or `human review`. Shared code becomes justified when repeated mechanics create measurable maintenance burden and stable invariants have actually emerged.
+
+## Portfolio-level convergence: federated, not merged
+
+The portfolio now shows a stronger pattern than recurring vocabulary alone.
+
+Several projects developed under different domain pressure have independently converged on a common **design grammar**:
+
+```text
+preserve what actually happened
+↓
+keep evidence distinct from interpretation
+↓
+preserve uncertainty, dissent, and revision
+↓
+keep standing / authority explicit
+↓
+separate proposals from governed decisions
+↓
+separate authorization from execution
+↓
+observe what happened in reality
+↓
+let outcomes change future reliance without rewriting history
+```
+
+That convergence is meaningful, but it must be interpreted carefully.
+
+### What the convergence does mean
+
+It is evidence that several architectural responsibilities recur across very different domains:
+
+- empirical continuity — what happened, what evidence existed, and when;
+- interpretive continuity — how evidence may be understood without collapsing source into explanation;
+- epistemic continuity — what should remain active, contested, superseded, or reopenable over time;
+- purposive / constitutional continuity — what the system is actually governed to pursue and who may legitimately decide;
+- deliberative plurality — how multiple human or machine participants can contribute without agreement becoming authority;
+- reality feedback — how observed consequences should affect future reliance, routing, memory, and governance.
+
+The dedicated **Governed Intelligence Ecology** repository is the current research integration layer for studying these responsibilities together. It does not make the component projects mere modules of one product.
+
+### What the convergence does not mean
+
+Do **not** infer:
+
+```text
+shared principle
+=> shared ontology
+=> shared runtime
+=> shared repository
+=> project merger
+```
+
+Independent development remains valuable evidence.
+
+For example:
+
+- ChessHeat independently arriving at strict evidence and claim boundaries is stronger evidence than ChessHeat merely implementing a rule imported from GIE.
+- Performance Manuscript independently separating manuscript, attribution, cast, render, and QC is stronger than treating it as a thin Hermeneia feature.
+- Hermeneia discovering its own Reader-centered and corpus-level needs should not be constrained by audiobook-production requirements.
+- SODATERU's Worlds / Workspace / Garden interaction pattern can inspire another product without making SODATERU the framework for that product.
+
+The preferred portfolio pattern is therefore **federated convergence**:
+
+```text
+shared principles where earned
+shared contracts where useful
+shared infrastructure where repeated mechanics justify it
+
+BUT
+
+independent purposes
+independent validation
+independent failure
+independent evolution
+```
+
+Integration should happen through explicit interfaces and preserved boundaries rather than by making one repository the ontology or runtime authority for the rest.
+
+### Current cross-project layers
+
+A useful orientation — not a mandatory deployment topology — is:
+
+```text
+THEORY / INTEGRATION
+    Governed Intelligence Ecology
+
+SPECIALIZED RESEARCH SITES
+    Pyxis · Hermeneia · Memory Lab · Telos · MASI
+    Continuity Node · ChessHeat · Proofline · CTRT · Performance Manuscript · others
+
+PUBLIC COORDINATION / CHALLENGE
+    Decision Point Initiative + Decision Point Workshop
+
+APPLIED INSTITUTIONAL WORK
+    Masters Consulting Group
+
+OPERATING PRODUCTS / DOMAIN LABORATORIES
+    SODATERU · Aerial Inspections · YurrMom · creative systems · games · utilities · others
+```
+
+The arrows among these layers are **learning and application paths**, not ownership claims.
+
+A research result may inform consulting. Client or operating evidence may expose a research weakness. A public workshop may challenge an architecture. A production product may reveal an interaction pattern worth reusing elsewhere. None of those relationships automatically transfers canonical authority.
+
+The emerging portfolio-scale loop is:
+
+```text
+research
+→ publication / public challenge
+→ education / qualification
+→ implementation
+→ observed outcomes
+→ research revision
+```
+
+Treat this as a current synthesis to test, not as a final master architecture.
 
 ---
 
 # Canonical project map
 
 The entries below are orientation summaries, not substitutes for each repository's own canonical documentation.
+
+## Governed Intelligence Ecology
+
+**Identity:** a research and integration program studying how models, evidence, interpretation, memory, human judgment, authority, execution, and reality feedback can remain distinct but interoperable across time.
+
+**Do not flatten into:** a mega-platform, universal ontology, model framework, or claim that its named component projects have already been unified. GIE distinguishes theory, architectural responsibility, concrete research systems, internal mechanisms, and implementation substrates.
+
+**Critical distinction:** the frontier model is not the system, and GIE is not the sum of its current implementations. Its present phase is empirical falsification and conformance verification; simpler alternatives are explicitly allowed to win.
 
 ## MASI
 
@@ -85,7 +215,9 @@ The entries below are orientation summaries, not substitutes for each repository
 
 **Identity:** an operating environment for the disciplined evolution of understanding. It separates discovery, semantic reconstruction, expression, evaluation, and human stewardship while preserving the lineage of how understanding changed.
 
-**Do not flatten into:** a chatbot, generic document analyzer, or generic provenance engine.
+**Do not flatten into:** a chatbot, generic document analyzer, generic provenance engine, or the future combined form of every adjacent authoring/publishing project.
+
+**Current convergence boundary:** Hermeneia and Performance Manuscript now have an explicit future `write / read / listen` convergence hypothesis, including continuous audiobook and living-audio/podcast possibilities. The repositories remain intentionally independent until each demonstrates its intended behavior on its own terms.
 
 ## Pyxis
 
@@ -187,7 +319,9 @@ The entries below are orientation summaries, not substitutes for each repository
 
 **Identity:** a provider-neutral manuscript-to-performance production system covering structure, speaker attribution, uncertainty, casting, performance direction, human ratification, selective regeneration, QC, assembly, and packaging.
 
-**Do not flatten into:** a TTS engine. TTS is a replaceable renderer inside the workflow.
+**Do not flatten into:** a TTS engine, or into Hermeneia merely because both now expose a plausible future write/read/listen workflow. TTS is a replaceable renderer inside Performance Manuscript; Hermeneia remains a separate inquiry and interpretation environment.
+
+**Current convergence boundary:** future integration may allow authors to write and listen as they go, regenerate only affected audio, or reuse production machinery for governed analytical audio. That integration is explicitly deferred while both projects validate independently.
 
 ## Modern Movie Crew
 
@@ -247,7 +381,26 @@ The entries below are orientation summaries, not substitutes for each repository
 
 **Identity:** an operating slow-fashion / wearable-art storefront where SODATERU owns editorial context, presentation, community experience, and business learning while Printful remains the fulfillment source of truth.
 
-**Do not flatten into:** a custom fulfillment system.
+**Do not flatten into:** a custom fulfillment system or a generic framework for the portfolio.
+
+**Cross-project lesson:** its production Next.js/React/Prisma/MySQL application and Worlds / Workspace / Garden interaction pattern are now a proven implementation precedent for building purpose-specific interactive environments without assembling a plugin stack. Other projects may inherit that lesson without inheriting SODATERU's domain ontology or product identity.
+
+## Masters Consulting Group
+
+**Identity:** the client-facing management and technology consulting practice that applies diagnosis, architecture, implementation, workforce capability, and operating feedback to real organizational problems, beginning with the institution and its economics rather than a favored technology.
+
+**Do not flatten into:** the commercialization arm of every research repository, an AI vendor, or a vehicle for forcing GIE into clients. Masters may reuse research where it survives scrutiny, but the recommendation may be to simplify, buy, integrate, build, train people, use deterministic software, retain existing technology, or not automate.
+
+**Cross-project role:** Masters is the primary applied institutional surface through which portfolio research can be tested against real operating constraints. Its emerging learning/qualification platform is intended to combine externally legible technical training with Masters-specific reasoning while preserving a separate evidence-backed admission process.
+
+## Decision Point Initiative
+
+**Identity:** an independent public initiative for improving consequential decisions by expanding the available evidence, alternatives, tools, experiments, challenges, and conversations while meaningful choice still exists.
+
+**Do not flatten into:** a political decision-maker, social network, advocacy front for one architecture, or a public wrapper around the private portfolio. DPI does not exist to decide for people and explicitly welcomes serious criticism and better alternatives.
+
+**Cross-project role:** DPI and the Decision Point Workshop are the public coordination / challenge layer. They can expose portfolio ideas to bounded contribution, reproduction, falsification, and synthesis without making participation equivalent to agreement or transferring authority from the source projects.
+
 
 ## Big Joke
 
@@ -338,6 +491,9 @@ Historical adjacency does not imply replacement or equivalence.
 - **HeadroomCalc legacy/dev repositories -> HeadroomCalc:** development lineage, not multiple independent products.
 - **Do The Hard Thing Redesign <-> primary implementation:** parallel design exploration around one product lineage.
 - **Grounded-AI historical MASI wording -> canonical MASI publication:** old mentions using "Multi-Agent Specialized Intelligence" do not outrank the later canonical definition of **Modular Artificial Specialized Intelligence** as a multi-model architectural foundation.
+- **Performance Manuscript <-> Hermeneia:** an explicit future convergence around write/read/listen workflows, continuous audiobook production, and living analytical audio is now documented in both repositories. This is a deferred integration hypothesis, not a merger, shared ontology, or authority transfer.
+- **GIE <-> component research projects:** GIE may use Pyxis, Hermeneia, Memory Lab, Telos, MASI, and other systems as concrete research sites for architectural responsibilities. The theory-level role can be broader or narrower than any current implementation; the component repository retains its own canonical identity.
+- **SODATERU -> future interactive learning systems:** SODATERU provides a production and interaction precedent, not a product lineage claim. Reusing its application pattern does not make later educational or enterprise systems SODATERU descendants in ontology or purpose.
 
 Historical experiments such as ClarityBill, DroneSafe, Geopolitical Gambit, Message Distillation, Browser Storage Toast, Commandment Companion, Grounded-AI, Call To The Faithful, the Python 4 proposal, and the As You Wish client-site prototype should remain historical unless a current repository explicitly reactivates their authority.
 
@@ -382,7 +538,9 @@ Which canonical project definitions support this comparison?
 Which distinctions are being preserved?
 Is the similarity functional, architectural, economic, historical, or merely lexical?
 Could one project actually replace the other?
-Is a shared pattern evidence of duplication, or evidence of a deliberate engineering principle?
+Is a shared pattern evidence of duplication, a deliberate engineering principle, or an independently rediscovered invariant?
+At what level is the convergence: philosophy, architectural responsibility, semantic contract, interface, implementation substrate, or actual shared code?
+Would integration reduce duplication, or would it destroy useful independent validation and failure boundaries?
 ```
 
 If those questions cannot be answered from canonical sources, the correct result is **insufficient orientation**, not a confident synthesis.
