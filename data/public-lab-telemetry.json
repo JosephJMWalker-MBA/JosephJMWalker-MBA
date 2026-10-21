@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T17:17:33+00:00",
+  "generated_at": "2026-10-21T17:20:11+00:00",
   "scope": "selected public repositories only",
   "interpretation": "commit volume measures activity, not quality, importance, or validation strength",
   "weeks": 12,
@@ -44,7 +44,7 @@
     18,
     84,
     32,
-    14
+    21
   ],
   "repos": [
     {
@@ -62,10 +62,10 @@
         16,
         84,
         32,
-        14
+        21
       ],
-      "total": 361,
-      "latest_commit": "2026-10-20T03:19:18Z"
+      "total": 368,
+      "latest_commit": "2026-10-20T17:40:04Z"
     },
     {
       "repo": "Proofline",
